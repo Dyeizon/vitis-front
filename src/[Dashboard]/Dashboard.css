@@ -1,0 +1,25 @@
+aside {
+    background-color: rgba(122, 6, 59, 0.86);
+    color: white;
+}
+
+aside ul li {
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+aside ul a:hover {
+    background-color: #F46EA9;
+}
+
+aside img {
+    width: 50px;
+}
+
+.info {
+    border-bottom: 1px solid #F46EA9;
+}
+
+.disableOption {
+    background-color: #F46EA9;
+}
