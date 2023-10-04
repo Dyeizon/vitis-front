@@ -2,7 +2,7 @@ import "./Dashboard.css";
 import logo from "./../img/logo.png";
 import { useState } from "react";
 
-import Analise from "./Analise";
+import Analise from "./[Analise]/Analise";
 import Fungis from "./Fungis";
 import Cycles from "./Cycles";
 import AboutUs from "./AboutUs";
@@ -38,7 +38,7 @@ export default function Dashboard() {
                 </div>
             </aside>
 
-            <div className="p-4 sm:ml-64">
+            <div className="dashboard-content p-4 sm:ml-64">
                 {selected === "analise" ? <Analise/> : ""}
                 {selected === "fungis" ? <Fungis/> : ""}
                 {selected === "cycles" ? <Cycles/> : ""}

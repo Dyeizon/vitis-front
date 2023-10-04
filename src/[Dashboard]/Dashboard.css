@@ -1,5 +1,5 @@
 aside {
-    background-color: rgba(122, 6, 59, 0.86);
+    background-color: rgba(122, 6, 59, 0.85);
     color: white;
 }
 
@@ -22,4 +22,47 @@ aside img {
 
 .disableOption {
     background-color: #F46EA9;
+}
+
+.dashboard-content {
+    background-color: #F6EEE8;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+/* Análise */
+
+.analise-ciclos {
+    display: flex;
+    justify-content: center;
+}
+
+.analise-ciclos-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: 150px;
+    column-gap: 40px;
+}
+
+.card-ciclo {
+    background-color: rgba(122, 6, 59, 1);
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    border-radius: 100%;
+    white-space: pre-wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 500ms background-color, 200ms border;
+}
+
+.card-ciclo:hover {
+    background-color: #f73489;
+}
+
+.ciclo-selecionado {
+    border: 4px solid #c40055;
+    background-color: #f73489;
 }

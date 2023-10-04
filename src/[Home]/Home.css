@@ -61,7 +61,7 @@
     color: white;
     padding: 10px 60px;
     font-size: 1.2em;
-    transition: background-color 200ms ease-in, border-radius 250ms;
+    transition: 200ms background-color, 250ms border-radius;   
 }
 
 .home main button:hover {
