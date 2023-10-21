@@ -1,14 +1,14 @@
 import "./../Dashboard.css";
+import CitySelector from "./CitySelector";
 
-import ControladorCiclos from "./ControladorCiclos";
+import CyclesController from "./CyclesController";
 
 export default function Analise() {
     return (
         <section className="analise">
             <div className="analise-ciclos">
-                <ControladorCiclos>
-                    
-                </ControladorCiclos>
+                <CyclesController/>
+                <CitySelector/>
             </div>
         </section>
     );

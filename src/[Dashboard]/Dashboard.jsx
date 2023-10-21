@@ -43,8 +43,6 @@ export default function Dashboard() {
                 {selected === "fungis" ? <Fungis/> : ""}
                 {selected === "cycles" ? <Cycles/> : ""}
                 {selected === "aboutUs" ? <AboutUs/> : ""}
-                
-                <div style={{width: 150, height: 150, backgroundColor: "blue"}}>aawdawd</div>
             </div>
 
         </section>
