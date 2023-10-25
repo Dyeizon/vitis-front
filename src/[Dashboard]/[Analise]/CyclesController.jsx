@@ -15,14 +15,14 @@ export default function ControladorCiclos({children}) {
     }
 
     return (
-        <div className="analise-ciclos-grid">
-            <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={1} img={dormenciaImg} text="Dormência"/>
-            <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={2} img={brotacaoImg} text="Brotação"/>
-            <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={3} img={floracaoImg} text="Floração"/>
-            <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={4} img={crescimentoImg} text={"Crescimento\ndos cachos"}/>
-            <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={5} img={maturacaoImg} text="Maturação"/>
-
-            
+        <div className="analise-cycles">
+            <div className="analise-cycles-grid">
+                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={1} img={dormenciaImg} text="Dormência"/>
+                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={2} img={brotacaoImg} text="Brotação"/>
+                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={3} img={floracaoImg} text="Floração"/>
+                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={4} img={crescimentoImg} text={"Crescimento\ndos cachos"}/>
+                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={5} img={maturacaoImg} text="Maturação"/>
+            </div>
         </div>
     );
 }

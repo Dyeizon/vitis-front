@@ -34,20 +34,27 @@ aside img {
 
 /* Controlador de Ciclos */
 
-.analise-ciclos {
+.analise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.analise-cycles {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.analise-ciclos-grid {
+.analise-cycles-grid {
     display: grid;
     grid-template-columns: repeat(5, 150px);
     grid-template-rows: 150px;
     column-gap: 40px;
 }
 
-.card-ciclo {
+.cycle-card {
     background-color: rgba(122, 6, 59, 1);
     font-size: 1.2em;
     color: white;
@@ -65,18 +72,22 @@ aside img {
     transition: background-size 400ms, border 200ms;
 }
 
-.card-ciclo h2 {
+.cycle-card h2 {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding: .2em 0;
 }
 
-.card-ciclo:hover {
+.cycle-card:hover {
     background-size: 110%;
 }
 
-.ciclo-selecionado {
+.selected-cycle {
     border: 4px solid #c40055;
 }
 
 /* Controlador de Cidades */
+
+.select-city {
+    min-width: 40%;
+}
