@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Select from "react-select";
 
+import { VitisContext } from "../../App";
+
 export default function CitySelector() {
   const [cities, setCities] = useState([]);
   const [selectedCity, setSelectedCity] = useState(null);
+
+  const vitisContext = React.useContext(VitisContext);
 
   useEffect(() => {
     fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados/SC/municipios")
@@ -26,7 +30,11 @@ export default function CitySelector() {
     
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${selectedOption.label},SC,BR&lang=pt_br&units=metric&appid=bb186615f7a8211e4664a8c376adf145`)
       .then((response) => response.json())
-      .then((data) => console.log(data))
+      .then((data) => {
+        console.log(data);
+        vitisContext.setTemp(data.main.temp);
+        console.log(vitisContext);
+      })
       .catch((error) => {
         console.error("Erro ao encontrar a cidade na API OpenWeatherMap: ", error);
       });
@@ -34,7 +42,7 @@ export default function CitySelector() {
 
   return (
       <Select
-        className="select-city mt-10"
+        className="select-city my-10"
         options={cities}
         value={selectedCity}
         onChange={handleCityChange}

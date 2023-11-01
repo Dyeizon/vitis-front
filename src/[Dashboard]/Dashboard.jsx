@@ -3,9 +3,9 @@ import logo from "./../img/logo.png";
 import { useState } from "react";
 
 import Analise from "./[Analise]/Analise";
-import Fungis from "./Fungis";
-import Cycles from "./Cycles";
-import AboutUs from "./AboutUs";
+import Fungis from "./[Fungis]/Fungis";
+import Cycles from "./[Cycles]/Cycles";
+import AboutUs from "./[AboutUs]/AboutUs";
 
 export default function Dashboard() {
     const [selected, setSelected] = useState("analise");

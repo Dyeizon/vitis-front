@@ -1,6 +1,8 @@
 import "./reset.css";
 import "./index.css";
 
+import React, { useState } from "react";
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -18,12 +20,18 @@ const router = createBrowserRouter([
   },
   {
     path: "dashboard",
-    element: <Dashboard/>
+    element: <Dashboard/>,
   }
 ]);
 
+export const VitisContext = React.createContext();
+
 export default function App() {
+  const [temp, setTemp] = useState();
+
   return (
-    <RouterProvider router={router}/>
+    <VitisContext.Provider value={{temp, setTemp}}>
+      <RouterProvider router={router}/>
+    </VitisContext.Provider>
   );
 }
