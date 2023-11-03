@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import CycleCard from "./CycleCard";
 
 import brotacaoImg from "./../../img/brotacao.jpg";
@@ -6,12 +6,15 @@ import dormenciaImg from "./../../img/dormencia.jpg";
 import floracaoImg from "./../../img/floracao.jpg";
 import crescimentoImg from "./../../img/crescimento.jpg";
 import maturacaoImg from "./../../img/maturacao.jpg";
+import { VitisContext } from "../../App";
 
 export default function ControladorCiclos({children}) {
     const [selectedButton, setSelectedButton] = useState(null);
+    const vitisContext = useContext(VitisContext);
 
     const handleButtonClick = (buttonNumber) => {
         setSelectedButton(buttonNumber);
+        vitisContext.setCycle(buttonNumber);
     }
 
     return (

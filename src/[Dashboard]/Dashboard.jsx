@@ -22,16 +22,16 @@ export default function Dashboard() {
 
                 <div className="h-full py-4 overflow-y-auto">
                     <ul className="space-y-2 font-medium">
-                        <li onClick={() => {setSelected("analise")}} className={`flex justify-center items-center p-2 text-white ${selected==="analise" ? "disableOption" : ""}`}>
+                        <li onClick={() => {setSelected("analise")}} className={`flex justify-center items-center p-2 text-white ${selected==="analise" ? "selectedOption" : ""}`}>
                             <span>Análise</span>
                         </li>
-                        <li onClick={() => {setSelected("fungis")}} className={`flex justify-center items-center p-2 text-white ${selected==="fungis" ? "disableOption" : ""}`}>
+                        <li onClick={() => {setSelected("fungis")}} className={`flex justify-center items-center p-2 text-white ${selected==="fungis" ? "selectedOption" : ""}`}>
                             <span>Fungos</span>
                         </li>
-                        <li onClick={() => {setSelected("cycles")}} className={`flex justify-center items-center p-2 text-white ${selected==="cycles" ? "disableOption" : ""}`}>
+                        <li onClick={() => {setSelected("cycles")}} className={`flex justify-center items-center p-2 text-white ${selected==="cycles" ? "selectedOption" : ""}`}>
                             <span>Ciclos</span>
                         </li>
-                        <li onClick={() => {setSelected("aboutUs")}} className={`flex justify-center items-center p-2 text-white ${selected==="aboutUs" ? "disableOption" : ""}`}>
+                        <li onClick={() => {setSelected("aboutUs")}} className={`flex justify-center items-center p-2 text-white ${selected==="aboutUs" ? "selectedOption" : ""}`}>
                             <span>Sobre nós</span>
                         </li>
                     </ul>

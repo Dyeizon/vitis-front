@@ -33,6 +33,8 @@ export default function CitySelector() {
       .then((data) => {
         console.log(data);
         vitisContext.setTemp(data.main.temp);
+        vitisContext.setHumidity(data.main.humidity);
+        vitisContext.setCity(data.name);
         console.log(vitisContext);
       })
       .catch((error) => {
