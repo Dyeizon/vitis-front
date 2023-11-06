@@ -1,15 +1,28 @@
 const express = require("express")
 const mysql = require('mysql2');
+const cors = require('cors');
 const app = express()
 
 app.set("view engine", "ejs")
+app.use(cors())
 
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Vitis12345',
+    password: 'Batman',
     database: 'vitis'
 });
+
+app.get("/api/ciclos", (req, res) => {
+  connection.query('SELECT * FROM ciclos', (error, results, fields) => {
+    if (error) {
+      console.error('Erro na consulta:', error);
+    } else {
+      console.log('Resultados da consulta:', results);
+      res.json(results)
+    }
+});
+})
 
 connection.connect((err) => {
     if (err) {
@@ -19,21 +32,7 @@ connection.connect((err) => {
     }
 });
 
-app.get("/", (req, res) => {
-    console.log("Here")
-    res.download("server.js")
-    res.render("index", { text: "World" })
-})
+const apiRouter = require("./routes/api")
+app.use("/api", apiRouter)
 
-connection.query('SELECT * FROM ciclos', (error, results, fields) => {
-    if (error) {
-      console.error('Erro na consulta:', error);
-    } else {
-      console.log('Resultados da consulta:', results);
-    }
-});
-
-const userRouter = require("./routes/users")
-app.use("/users", userRouter)
-
-app.listen(3000)
+app.listen(5000)
