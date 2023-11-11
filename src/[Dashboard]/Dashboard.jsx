@@ -1,6 +1,6 @@
 import "./Dashboard.css";
 import logo from "./../img/logo.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Analise from "./[Analise]/Analise";
 import Fungis from "./[Fungis]/Fungis";
@@ -9,6 +9,17 @@ import AboutUs from "./[AboutUs]/AboutUs";
 
 export default function Dashboard() {
     const [selected, setSelected] = useState("analise");
+
+    useEffect(() => {
+        fetch("http://localhost:5000/api/teste")
+          .then((response) => {
+            return response.json();
+          }).then(data => {console.log(data)})
+          .catch((error) => {
+            console.error("Erro ao requisitar os dados do servidor: ", error);
+          });
+      }, []);
+
     return (
         <section className="dashboard">          
             <aside className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
