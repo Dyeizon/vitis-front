@@ -10,7 +10,7 @@ export default function Home() {
                 </header>
                 <main>
                     <h1>Vitis</h1>
-                    <a href="dashboard"><button class="font-bold py-2 px-4 rounded-full shadow">Analise a saúde das suas videiras</button></a>
+                    <a href="dashboard"><button className="font-bold py-2 px-4 rounded-full shadow">Analise a saúde das suas videiras</button></a>
                 </main>
             </div>
         </>

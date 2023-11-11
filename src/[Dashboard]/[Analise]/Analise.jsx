@@ -3,7 +3,9 @@ import CityInfo from "./Result/City/CityInfo";
 import CitySelector from "./CitySelector";
 import Fungi from "./Result/Fungi";
 
-import { useContext } from "react";
+import { useState, useEffect, useContext } from "react";
+import { supabase } from "../../App";
+
 import { VitisContext } from "../../App";
 import CyclesController from "./Cycles/CyclesController";
 
@@ -12,6 +14,17 @@ import placeholderImg from "./../../img/background.jpg";
 export default function Analise() {
     const vitisContext = useContext(VitisContext);
     
+    const [fungos, setFungos] = useState([]);
+
+    useEffect(() => {
+      getFungos();
+    }, []);
+
+    async function getFungos() {
+      const { data } = await supabase.from('fungo').select();
+      setFungos(data);
+    }
+
     return (
         <section className="analise">
                 <CyclesController/>
@@ -22,13 +35,13 @@ export default function Analise() {
                     <CityInfo/>
                     <hr/>
                     <h1 className="text-xl p-10">Fungos Comuns</h1>
-                    <div className="common-fungis" style={{display: vitisContext.city && vitisContext.cycle ? '' : 'none'}}>
-                        <Fungi img={placeholderImg} name="Míldio" cientificName="Plasmopara Viticola" desc="O míldio, doença de maior importância para a viticultura no Brasil, é também conhecido como mufa, mofo ou peronóspora e é causado pelo pseudofungo Plasmopara viticola" treatment="TRATAMENTO, TRATAMENTO"></Fungi>
-                        <Fungi img={placeholderImg} name="NOME" cientificName="NOME CIENTIFICO" desc="DESCRICAO DESESCRICAOCRICAODES" treatment="TRATAMENTO, TRATAMENTO"></Fungi>
-                        <Fungi img={placeholderImg} name="NOME" cientificName="NOME CIENTIFICO" desc="DESCRICAO DESESCRICAOCRICAODES" treatment="TRATAMENTO, TRATAMENTO"></Fungi>
-                        <Fungi img={placeholderImg} name="NOME" cientificName="NOME CIENTIFICO" desc="DESCRICAO DESESCRICAOCRICAODES" treatment="TRATAMENTO, TRATAMENTO"></Fungi>
-                        <Fungi img={placeholderImg} name="NOME" cientificName="NOME CIENTIFICO" desc="DESCRICAO DESESCRICAOCRICAODES" treatment="TRATAMENTO, TRATAMENTO"></Fungi>
-                    </div>
+                    <ul className="common-fungis" style={{display: vitisContext.city && vitisContext.cycle ? '' : 'none'}}>
+                        {fungos.map((fungo) => (
+                            <li>
+                                <Fungi key={fungo.id} img={placeholderImg} name={fungo.nome} cientificName={fungo.nome_cientifico} desc={fungo.resumo}/>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
                 
         </section>
