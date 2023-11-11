@@ -1,6 +1,6 @@
 import React from "react";
-import "./../../Dashboard.css";
-import { VitisContext } from "../../../App";
+import "./../../Analise.css";
+import { VitisContext } from "../../../../App";
 
 export default function Thermometer() {
     const vitisContext = React.useContext(VitisContext);

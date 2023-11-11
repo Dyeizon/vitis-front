@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import "./../../Dashboard.css";
-import { VitisContext } from "../../../App";
+import "./../../Analise.css";
+import { VitisContext } from "../../../../App";
 
 export default function Humidity() {
     const vitisContext = useContext(VitisContext);

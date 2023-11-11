@@ -1,10 +1,13 @@
-import "./../Dashboard.css";
-import CityInfo from "./CityInfo/CityInfo";
+import "./Analise.css";
+import CityInfo from "./Result/City/CityInfo";
 import CitySelector from "./CitySelector";
+import Fungi from "./Result/Fungi";
 
 import { useContext } from "react";
 import { VitisContext } from "../../App";
-import CyclesController from "./CyclesController";
+import CyclesController from "./Cycles/CyclesController";
+
+import placeholderImg from "./../../img/background.jpg";
 
 export default function Analise() {
     const vitisContext = useContext(VitisContext);
@@ -19,6 +22,13 @@ export default function Analise() {
                     <CityInfo/>
                     <hr/>
                     <h1 className="text-xl p-10">Fungos Comuns</h1>
+                    <div className="common-fungis" style={{display: vitisContext.city && vitisContext.cycle ? '' : 'none'}}>
+                        <Fungi img={placeholderImg} name="Míldio" cientificName="Plasmopara Viticola" desc="O míldio, doença de maior importância para a viticultura no Brasil, é também conhecido como mufa, mofo ou peronóspora e é causado pelo pseudofungo Plasmopara viticola" treatment="TRATAMENTO, TRATAMENTO"></Fungi>
+                        <Fungi img={placeholderImg} name="NOME" cientificName="NOME CIENTIFICO" desc="DESCRICAO DESESCRICAOCRICAODES" treatment="TRATAMENTO, TRATAMENTO"></Fungi>
+                        <Fungi img={placeholderImg} name="NOME" cientificName="NOME CIENTIFICO" desc="DESCRICAO DESESCRICAOCRICAODES" treatment="TRATAMENTO, TRATAMENTO"></Fungi>
+                        <Fungi img={placeholderImg} name="NOME" cientificName="NOME CIENTIFICO" desc="DESCRICAO DESESCRICAOCRICAODES" treatment="TRATAMENTO, TRATAMENTO"></Fungi>
+                        <Fungi img={placeholderImg} name="NOME" cientificName="NOME CIENTIFICO" desc="DESCRICAO DESESCRICAOCRICAODES" treatment="TRATAMENTO, TRATAMENTO"></Fungi>
+                    </div>
                 </div>
                 
         </section>

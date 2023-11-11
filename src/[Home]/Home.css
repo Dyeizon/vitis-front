@@ -64,9 +64,20 @@
     transition: 200ms background-color, 250ms border-radius;   
     border-radius: 100px 0px 100px 0px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    animation: bounce 1s infinite;
 }
 
 .home main button:hover {
     background-color: rgb(201, 83, 134);
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-10%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
