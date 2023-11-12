@@ -45,7 +45,6 @@ export default function Dashboard() {
                 {selected === "cycles" ? <Cycles/> : ""}
                 {selected === "aboutUs" ? <AboutUs/> : ""}
             </div>
-
         </section>
 
     );

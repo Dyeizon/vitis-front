@@ -18,10 +18,11 @@ export default function Analise() {
 
     useEffect(() => {
       getFungos();
+      console.log(fungos);
     }, []);
 
     async function getFungos() {
-      const { data } = await supabase.from('fungo').select();
+        const { data } = await supabase.from('fungo').select('*, imagem_fungo!inner(img)');
       setFungos(data);
     }
 
@@ -37,13 +38,12 @@ export default function Analise() {
                     <h1 className="text-xl p-10">Fungos Comuns</h1>
                     <ul className="common-fungis" style={{display: vitisContext.city && vitisContext.cycle ? '' : 'none'}}>
                         {fungos.map((fungo) => (
-                            <li>
-                                <Fungi key={fungo.id} img={placeholderImg} name={fungo.nome} cientificName={fungo.nome_cientifico} desc={fungo.resumo}/>
+                            <li key={fungo.id}>
+                                <Fungi img={fungo.imagem_fungo[0].img} name={fungo.nome} cientificName={fungo.nome_cientifico} desc={fungo.resumo}/>
                             </li>
                         ))}
                     </ul>
                 </div>
-                
         </section>
     );
 

@@ -127,16 +127,14 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
     grid-gap: 5rem;
-    width: 60%;
+    margin: 0 auto;
 }
 
-.analise-fungi-card {
-    border: 2px solid #c40055;
-    overflow: hidden;
-    border-radius: 20px;
-    height: 400px;
+.common-fungis li {
+    display: flex;
+    justify-content: center;
 }
 
-.analise-fungi-card-img {
-
+.analise-fungi-info-button {
+    align-self: flex-start;
 }
