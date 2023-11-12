@@ -1,32 +1,28 @@
-import "./../Dashboard.css";
+import "./Fungis.css";
 import { useState, useEffect } from "react";
 import { supabase } from "../../App";
-import Fungi from "../[Analise]/Result/Fungi";
-import placeholderImg from "./../../img/background.jpg";
+import FungiCard from "./FungiCard";
 
 export default function Fungis() {
     const [fungos, setFungos] = useState([]);
 
     useEffect(() => {
       getFungos();
-      console.log(fungos);
     }, []);
 
     async function getFungos() {
         const { data } = await supabase
         .from('fungo')
         .select('*, imagem_fungo!inner(img)');
-
       setFungos(data);
-
     }
 
     return (
         <section className="fungis-page">
-            <ul className="common-fungis">
+            <ul>
                 {fungos.map((fungo) => (
-                    <li key={fungo.id}>
-                        <Fungi img={fungo.imagem_fungo[0].img} name={fungo.nome} cientificName={fungo.nome_cientifico} desc={fungo.resumo}/>
+                    <li id={`fungo`+fungo.id} key={fungo.id}>
+                        <FungiCard info={fungo}/>
                     </li>
                 ))}
             </ul>

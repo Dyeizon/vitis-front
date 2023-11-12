@@ -9,16 +9,13 @@ import { supabase } from "../../App";
 import { VitisContext } from "../../App";
 import CyclesController from "./Cycles/CyclesController";
 
-import placeholderImg from "./../../img/background.jpg";
-
 export default function Analise() {
     const vitisContext = useContext(VitisContext);
-    
+
     const [fungos, setFungos] = useState([]);
 
     useEffect(() => {
       getFungos();
-      console.log(fungos);
     }, []);
 
     async function getFungos() {

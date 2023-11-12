@@ -135,6 +135,22 @@
     justify-content: center;
 }
 
+.analise-fungi-img {
+    height: 50%;
+    overflow: hidden;
+}
+
 .analise-fungi-info-button {
     align-self: flex-start;
+}
+
+/* Fungo PopUp */
+
+.fungi-popup {
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    right: 0;
 }

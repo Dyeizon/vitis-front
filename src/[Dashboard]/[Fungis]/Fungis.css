@@ -1,0 +1,19 @@
+.fungis-page ul li {
+    width: 100vw;
+    height: 100vh;
+}
+
+.fungis-images {
+    border: 0.2rem solid rgba(140, 39, 83, 0.95);
+    background-color: rgba(140, 39, 83, 0.95);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.1rem;
+    width: 400px;
+    height: 300px;
+    
+}
+
+.fungis-images > div {
+    background-size: cover;
+}
