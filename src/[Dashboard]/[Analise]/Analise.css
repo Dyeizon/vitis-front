@@ -142,6 +142,13 @@
 
 .analise-fungi-info-button {
     align-self: flex-start;
+    background-color: #c40055;
+    transition: background-color 200ms ease;
+}
+
+.analise-fungi-info-button:hover {
+    align-self: flex-start;
+    background-color: #9f0045;
 }
 
 /* Fungo PopUp */
