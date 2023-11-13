@@ -4,16 +4,16 @@
 }
 
 .fungis-images {
-    border: 0.2rem solid rgba(140, 39, 83, 0.95);
-    background-color: rgba(140, 39, 83, 0.95);
+    border: 0.4rem solid rgba(245, 106, 166, 0.95);
+    background-color: rgba(245, 106, 166, 0.95);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.1rem;
-    width: 400px;
-    height: 300px;
-    
+    grid-gap: 0.4rem;
+    width: 500px;
+    height: 400px;
 }
 
 .fungis-images > div {
     background-size: cover;
+    background-position: center;
 }

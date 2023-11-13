@@ -1,30 +1,31 @@
 import React from "react";
-import { useContext } from "react";
+import { useState, useEffect } from "react";
 import FungiPopUp from "./FungiPopUp";
-import { VitisContext } from "../../../App";
 
-export default function Fungi({ img, name, cientificName, desc }) {
+export default function Fungi({dadosFungo}) {
+    const [popUp, setPopUp] = useState(false);
+    const [childState, setChildState] = useState(false);
 
-    const vitisContext = useContext(VitisContext);
+    useEffect(() => {
+      setPopUp(childState)
+    }, [childState]);
 
     function handleButton() {
-      vitisContext.modalOpen ? vitisContext.setModalOpen(false) : vitisContext.setModalOpen(true);
+      setPopUp(!popUp);
     }
 
     return (
       <>
-        <FungiPopUp/>
-
+        {popUp ? <FungiPopUp passChildState={setChildState} dados={dadosFungo}/> : ""}
+        
         <div className="max-w-sm rounded overflow-hidden shadow-lg flex flex-col">
-          <div className="analise-fungi-img">
-              <img src={img} alt="Fungo" className="w-full" />
-          </div>
+          <div className="analise-fungi-img" style={{backgroundImage: `url(` + dadosFungo.imagem_fungo[0].img  + `)`}}></div>
           <div className="analise-fungi-info flex flex-col flex-grow px-6 py-4">
             <div className="analise-fungi-name mb-2">
-              <span className="font-bold text-xl mb-2">{name}</span>{" "}
-              <span className="text-xs">({cientificName})</span>
+              <span className="font-bold text-xl mb-2">{dadosFungo.nome}</span>{" "}
+              <span className="text-xs">({dadosFungo.nome_cientifico})</span>
             </div>
-            <p className="text-gray-700 text-base mb-5">{desc}</p>
+            <p className="text-gray-700 text-base mb-5">{dadosFungo.resumo}</p>
     
             <div className="flex-grow" />
     

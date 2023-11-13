@@ -135,9 +135,15 @@
     justify-content: center;
 }
 
+.common-fungis li > div {
+    width: 400px;
+}
+
 .analise-fungi-img {
-    height: 50%;
+    height: 200px;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 
 .analise-fungi-info-button {
@@ -153,11 +159,3 @@
 
 /* Fungo PopUp */
 
-.fungi-popup {
-    position: absolute;
-    z-index: 2;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    right: 0;
-}

@@ -19,7 +19,7 @@ export default function Analise() {
     }, []);
 
     async function getFungos() {
-        const { data } = await supabase.from('fungo').select('*, imagem_fungo!inner(img)');
+        const { data } = await supabase.from('fungo').select('*, imagem_fungo!inner(img)').order('id', { ascending: true });
       setFungos(data);
     }
 
@@ -36,7 +36,7 @@ export default function Analise() {
                     <ul className="common-fungis" style={{display: vitisContext.city && vitisContext.cycle ? '' : 'none'}}>
                         {fungos.map((fungo) => (
                             <li key={fungo.id}>
-                                <Fungi img={fungo.imagem_fungo[0].img} name={fungo.nome} cientificName={fungo.nome_cientifico} desc={fungo.resumo}/>
+                                <Fungi dadosFungo={fungo}/>
                             </li>
                         ))}
                     </ul>

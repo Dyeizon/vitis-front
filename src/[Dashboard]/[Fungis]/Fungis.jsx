@@ -11,9 +11,7 @@ export default function Fungis() {
     }, []);
 
     async function getFungos() {
-        const { data } = await supabase
-        .from('fungo')
-        .select('*, imagem_fungo!inner(img)');
+        const { data } = await supabase.from('fungo').select('*, imagem_fungo!inner(img)').order('id', { ascending: true });
       setFungos(data);
     }
 
