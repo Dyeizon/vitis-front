@@ -137,6 +137,13 @@
 
 .common-fungis li > div {
     width: 400px;
+    cursor: pointer;
+    transition: scale 200ms;
+}
+
+.common-fungis li > div:hover {
+    
+    scale: 1.02;
 }
 
 .analise-fungi-img {
@@ -158,4 +165,18 @@
 }
 
 /* Fungo PopUp */
+
+.popup-carousel {
+    width: 400px;
+    height: 300px;
+}
+
+.popup-content {
+    height: 300px;
+}
+
+.popup-content > p {
+    height: 80%;
+    overflow: scroll;
+}
 

@@ -30,40 +30,25 @@ export default function FungiPopUp({dados, passChildState}) {
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-            <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all m-20 sm:w-full">
+            <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all w-4/6">
                 <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">
-                    <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                    <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">
-                        {dados.nome} <span className='text-sm'>({dados.nome_cientifico})</span>
-                    </Dialog.Title>
-                    <div className="mt-2">
-                    <Carousel className="rounded-xl">
-                    <img
-                        src={dados.imagem_fungo[0].img}
-                        alt="image 1"
-                        className="h-full w-full object-cover"
-                    />
-                    <img
-                        src={dados.imagem_fungo[1].img}
-                        alt="image 2"
-                        className="h-full w-full object-cover"
-                    />
-                    <img
-                        src={dados.imagem_fungo[2].img}
-                        alt="image 3"
-                        className="h-full w-full object-cover"
-                    />
-
-<img
-                        src={dados.imagem_fungo[3].img}
-                        alt="image 4"
-                        className="h-full w-full object-cover"
-                    />
-                    </Carousel>
-
-                        <p className="text-sm text-gray-500">{dados.descricao}</p>
-                    </div>
+                    <div className="mt-3 sm:ml-4 sm:mt-0 sm:text-left">
+                        <Dialog.Title as="h3" className="text-base leading-6 mb-5 text-gray-900">
+                            <span className='font-semibold'>{dados.nome}</span> <span className='text-sm italic'>({dados.nome_cientifico})</span>
+                        </Dialog.Title>
+                            <Carousel className="popup-carousel flex rounded-xl mr-7 float-left">
+                                {dados.imagem_fungo.map((img_fungo) => (
+                                    <img
+                                        key={img_fungo}
+                                        src={img_fungo.img}
+                                        alt="O fungo em ação"
+                                        className="h-full w-full object-cover"/>
+                                ))}
+                            </Carousel>
+                                <div className="popup-content">
+                                    <p className="text-sm text-gray-700 text-justify mr-2">{dados.descricao}</p>
+                                </div>
                     </div>
                 </div>
                 </div>

@@ -17,8 +17,9 @@ export default function Fungi({dadosFungo}) {
     return (
       <>
         {popUp ? <FungiPopUp passChildState={setChildState} dados={dadosFungo}/> : ""}
+
         
-        <div className="max-w-sm rounded overflow-hidden shadow-lg flex flex-col">
+        <div onClick={() => handleButton()} className="max-w-sm rounded overflow-hidden shadow-lg flex flex-col">
           <div className="analise-fungi-img" style={{backgroundImage: `url(` + dadosFungo.imagem_fungo[0].img  + `)`}}></div>
           <div className="analise-fungi-info flex flex-col flex-grow px-6 py-4">
             <div className="analise-fungi-name mb-2">
