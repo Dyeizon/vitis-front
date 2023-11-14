@@ -50,7 +50,7 @@ export default function Analise() {
                     <CityInfo/>
                     <hr/>
                     
-                    <h1 className="text-xl p-10">Fungos em potencial</h1>
+                    <h1 className="text-xl p-10">Fungos potenciais em <span className="font-bold">{vitisContext.city}</span></h1>
                     <ul className="common-fungis" style={{display: vitisContext.city && vitisContext.cycle ? '' : 'none'}}>
 
                     {validFungis.length > 0 ? validFungis.map((fungo) => (
