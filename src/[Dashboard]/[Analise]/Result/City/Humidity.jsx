@@ -1,14 +1,13 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./../../Analise.css";
-import { VitisContext } from "../../../../App";
 
-export default function Humidity() {
-    const vitisContext = useContext(VitisContext);
+export default function Humidity({humidity}) {
+
     
     return (
         <div className="humidity">
             <div className="humidity-container">
-                <p style={{opacity: vitisContext.humidity ? '1' : '0', scale: vitisContext.humidity ? '1' : '0'}}>{vitisContext.humidity}%</p>
+                <p style={{opacity: humidity ? '1' : '0', scale: humidity ? '1' : '0'}}>{humidity}%</p>
                 <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
             viewBox="0 0 328.611 328.611" xmlSpace="preserve">
             <g>

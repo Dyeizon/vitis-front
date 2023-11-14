@@ -35,7 +35,6 @@ export default function CitySelector() {
         vitisContext.setTemp(data.main.temp);
         vitisContext.setHumidity(data.main.humidity);
         vitisContext.setCity(data.name);
-        console.log(vitisContext);
       })
       .catch((error) => {
         console.error("Erro ao encontrar a cidade na API OpenWeatherMap: ", error);

@@ -1,4 +1,3 @@
-import "./Fungis.css";
 import { useState, useEffect } from "react";
 import { supabase } from "../../App";
 import FungiCard from "./FungiCard";
@@ -19,9 +18,13 @@ export default function Fungis() {
         <section className="fungis-page">
             <ul>
                 {fungos.map((fungo) => (
-                    <li id={`fungo`+fungo.id} key={fungo.id}>
-                        <FungiCard info={fungo}/>
-                    </li>
+                    <>
+                        <li className="py-8" id={`fungo`+fungo.id} key={fungo.id}>
+                            <FungiCard info={fungo}/>
+                            
+                        </li>
+                        <hr/>
+                    </>
                 ))}
             </ul>
         </section>

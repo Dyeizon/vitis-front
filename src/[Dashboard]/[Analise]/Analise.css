@@ -167,7 +167,7 @@
 /* Fungo PopUp */
 
 .popup-carousel {
-    width: 400px;
+    width: 40%;
     height: 300px;
 }
 
@@ -176,7 +176,6 @@
 }
 
 .popup-content > p {
-    height: 80%;
-    overflow: scroll;
+    height: 60%;
+    overflow: auto;
 }
-

@@ -1,7 +1,7 @@
 import { Fragment, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { useEffect } from 'react';
-import { Carousel } from "@material-tailwind/react";
+import FungiInfo from '../../[Fungis]/FungiInfo';
 
 export default function FungiPopUp({dados, passChildState}) {
     const [open, setOpen] = useState(true);
@@ -35,20 +35,11 @@ export default function FungiPopUp({dados, passChildState}) {
                 <div className="sm:flex sm:items-start">
                     <div className="mt-3 sm:ml-4 sm:mt-0 sm:text-left">
                         <Dialog.Title as="h3" className="text-base leading-6 mb-5 text-gray-900">
-                            <span className='font-semibold'>{dados.nome}</span> <span className='text-sm italic'>({dados.nome_cientifico})</span>
+                            
+                            <span>Mais informações sobre o fungo...</span>
                         </Dialog.Title>
-                            <Carousel className="popup-carousel flex rounded-xl mr-7 float-left">
-                                {dados.imagem_fungo.map((img_fungo) => (
-                                    <img
-                                        key={img_fungo}
-                                        src={img_fungo.img}
-                                        alt="O fungo em ação"
-                                        className="h-full w-full object-cover"/>
-                                ))}
-                            </Carousel>
-                                <div className="popup-content">
-                                    <p className="text-sm text-gray-700 text-justify mr-2">{dados.descricao}</p>
-                                </div>
+
+                        <FungiInfo dados={dados}/>
                     </div>
                 </div>
                 </div>

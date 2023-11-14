@@ -1,14 +1,11 @@
 import React from "react";
 import "./../../Analise.css";
-import { VitisContext } from "../../../../App";
 
-export default function Thermometer() {
-    const vitisContext = React.useContext(VitisContext);
+export default function Thermometer({temp}) {
 	return (
         <div className="thermometer">
-
             <div className="thermometer-container">
-                <p style={{opacity: vitisContext.temp ? '1' : '0', scale: vitisContext.temp ? '1' : '0'}}>{vitisContext.temp ? vitisContext.temp.toFixed(1) : ''}°C</p>
+                <p style={{opacity: temp ? '1' : '0', scale: temp ? '1' : '0'}}>{temp ? temp.toFixed(1) : ''}°C</p>
                 <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 441.122 441.122" xmlSpace="preserve">
                     <g>
