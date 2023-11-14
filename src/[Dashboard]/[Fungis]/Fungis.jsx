@@ -16,11 +16,11 @@ export default function Fungis() {
     }
 
     return (
-        <section className="fungis-page">
+        <section>
             <ul>
                 {fungos.map((fungo) => (
                     <React.Fragment key={fungo.id}>
-                        <li className="py-8" id={`fungo`+fungo.id} >
+                        <li className="py-8 mx-10" id={`fungo`+fungo.id} >
                             <FungiCard info={fungo}/> 
                         </li>
                         <hr/>
