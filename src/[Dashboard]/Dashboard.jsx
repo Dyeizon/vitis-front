@@ -1,6 +1,6 @@
 import "./Dashboard.css";
 import logo from "./../img/logo.png";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 import Analise from "./[Analise]/Analise";
 import Fungis from "./[Fungis]/Fungis";
@@ -8,9 +8,10 @@ import Cycles from "./[Cycles]/Cycles";
 import AboutUs from "./[AboutUs]/AboutUs";
 
 import MobileMenu from "./MobileMenu";
+import { VitisContext } from "../App";
 
 export default function Dashboard() {
-    const [selected, setSelected] = useState("analise");
+    const vitisContext = useContext(VitisContext);
 
     return (
         <section className="dashboard">   
@@ -24,18 +25,18 @@ export default function Dashboard() {
                     </a>
                 </div>
 
-                <div className="h-full py-4 overflow-y-auto">
+                <div className="menu-content h-full py-4 overflow-y-auto">
                     <ul className="space-y-2 font-medium">
-                        <li onClick={() => {setSelected("analise")}} className={`flex justify-center items-center p-2 text-white ${selected==="analise" ? "selectedOption" : ""}`}>
+                        <li onClick={() => {vitisContext.setCurrentPage("analise")}} className={`flex justify-center items-center p-2 text-white ${vitisContext.currentPage==="analise" ? "selectedOption" : ""}`}>
                             <span>Análise</span>
                         </li>
-                        <li onClick={() => {setSelected("fungis")}} className={`flex justify-center items-center p-2 text-white ${selected==="fungis" ? "selectedOption" : ""}`}>
+                        <li onClick={() => {vitisContext.setCurrentPage("fungis")}} className={`flex justify-center items-center p-2 text-white ${vitisContext.currentPage==="fungis" ? "selectedOption" : ""}`}>
                             <span>Fungos</span>
                         </li>
-                        <li onClick={() => {setSelected("cycles")}} className={`flex justify-center items-center p-2 text-white ${selected==="cycles" ? "selectedOption" : ""}`}>
+                        <li onClick={() => {vitisContext.setCurrentPage("cycles")}} className={`flex justify-center items-center p-2 text-white ${vitisContext.currentPage==="cycles" ? "selectedOption" : ""}`}>
                             <span>Ciclos</span>
                         </li>
-                        <li onClick={() => {setSelected("aboutUs")}} className={`flex justify-center items-center p-2 text-white ${selected==="aboutUs" ? "selectedOption" : ""}`}>
+                        <li onClick={() => {vitisContext.setCurrentPage("aboutUs")}} className={`flex justify-center items-center p-2 text-white ${vitisContext.currentPage==="aboutUs" ? "selectedOption" : ""}`}>
                             <span>Sobre nós</span>
                         </li>
                     </ul>
@@ -43,10 +44,10 @@ export default function Dashboard() {
             </aside>
 
             <div className="dashboard-content p-4 sm:ml-64">
-                {selected === "analise" ? <Analise/> : ""}
-                {selected === "fungis" ? <Fungis/> : ""}
-                {selected === "cycles" ? <Cycles/> : ""}
-                {selected === "aboutUs" ? <AboutUs/> : ""}
+                {vitisContext.currentPage === "analise" ? <Analise/> : ""}
+                {vitisContext.currentPage === "fungis" ? <Fungis/> : ""}
+                {vitisContext.currentPage === "cycles" ? <Cycles/> : ""}
+                {vitisContext.currentPage === "aboutUs" ? <AboutUs/> : ""}
             </div>
         </section>
 

@@ -38,9 +38,10 @@ export default function App() {
   const [humidity, setHumidity] = useState();
   const [city, setCity] = useState();
   const [modalOpen, setModalOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState('analise');
 
   return (
-    <VitisContext.Provider value={{temp, setTemp, cycle, setCycle, humidity, setHumidity, city, setCity, modalOpen, setModalOpen}}>
+    <VitisContext.Provider value={{temp, setTemp, cycle, setCycle, humidity, setHumidity, city, setCity, modalOpen, setModalOpen, currentPage, setCurrentPage}}>
       <RouterProvider router={router}/>
     </VitisContext.Provider>
   );

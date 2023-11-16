@@ -8,31 +8,31 @@
     content: '';
     background-image: url("./../img/background.jpg");
     background-size: cover;
-    background-position-y: -20px;
     background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
 
     top: 0px;
     left: 0px;
 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
 
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .home header {
     position: absolute;
+    display: flex;
     padding: 10px 0px 0px 10px;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 150px;
 }
 
 .home header img {
-    height: 100%;
+    height: 12vw;
 }
 
 .home main {
@@ -82,12 +82,22 @@
 
 
 @media (max-width: 575.98px) { 
+    .home header {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .home header img{
+        width: 18vw;
+        height: 18vw;
+    }
+
     .home main h1 {
-        font-size: 10vw;
+        font-size: 12vw !important;
     }
 
     .home main button {
-        font-size: 3vw;
+        font-size: 3vw !important;
     }
  }
 
