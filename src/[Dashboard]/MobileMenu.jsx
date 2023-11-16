@@ -20,16 +20,16 @@ export default function MobileMenu() {
             <div className={`mobile-menu-content`} style={{height: open ? '' : '0px'}}>
                 <div style={{display: open ? '' : 'none'}} className="menu-content h-full py-4 overflow-y-auto">
                     <ul className="space-y-2 font-medium">
-                        <li onClick={() => {vitisContext.setCurrentPage("analise")}} className={`flex justify-center items-center p-2 text-white ${vitisContext.currentPage==="analise" ? "selectedOption" : ""}`}>
+                        <li onClick={() => {vitisContext.setCurrentPage("analise"); setOpen(false);}} className={`flex justify-center items-center p-2 text-white ${vitisContext.currentPage==="analise" ? "selectedOption" : ""}`}>
                             <span>Análise</span>
                         </li>
-                        <li onClick={() => {vitisContext.setCurrentPage("fungis")}} className={`flex justify-center items-center p-2 text-white ${vitisContext.currentPage==="fungis" ? "selectedOption" : ""}`}>
+                        <li onClick={() => {vitisContext.setCurrentPage("fungis"); setOpen(false);}} className={`flex justify-center items-center p-2 text-white ${vitisContext.currentPage==="fungis" ? "selectedOption" : ""}`}>
                             <span>Fungos</span>
                         </li>
-                        <li onClick={() => {vitisContext.setCurrentPage("cycles")}} className={`flex justify-center items-center p-2 text-white ${vitisContext.currentPage==="cycles" ? "selectedOption" : ""}`}>
+                        <li onClick={() => {vitisContext.setCurrentPage("cycles"); setOpen(false);}} className={`flex justify-center items-center p-2 text-white ${vitisContext.currentPage==="cycles" ? "selectedOption" : ""}`}>
                             <span>Ciclos</span>
                         </li>
-                        <li onClick={() => {vitisContext.setCurrentPage("aboutUs")}} className={`flex justify-center items-center p-2 text-white ${vitisContext.currentPage==="aboutUs" ? "selectedOption" : ""}`}>
+                        <li onClick={() => {vitisContext.setCurrentPage("aboutUs"); setOpen(false);}} className={`flex justify-center items-center p-2 text-white ${vitisContext.currentPage==="aboutUs" ? "selectedOption" : ""}`}>
                             <span>Sobre nós</span>
                         </li>
                     </ul>
