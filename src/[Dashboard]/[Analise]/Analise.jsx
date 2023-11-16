@@ -51,7 +51,7 @@ export default function Analise() {
                     <CityInfo/>
                     <hr/>
                     
-                    <h1 className="text-xl p-10">Potenciais fungos em <span className="font-bold">{vitisContext.city}</span></h1>
+                    <h1 className="text-xl p-10 text-center">Potenciais fungos em <span className="font-bold">{vitisContext.city}</span></h1>
                     <ul className="common-fungis" style={{display: vitisContext.city && vitisContext.cycle ? '' : 'none'}}>
 
                     {validFungis.length > 0 ? validFungis.map((fungo) => (
@@ -61,7 +61,7 @@ export default function Analise() {
                         )) : ""}
                     </ul>
 
-                    {validFungis.length > 0 ? "" : <h1 className="text-lg text-red-700 font-bold">Não foram encontrados fungos em potencial para as condições informadas.</h1>}
+                    {validFungis.length > 0 ? "" : <h1 className="text-lg text-red-700 font-bold text-center">Não foram encontrados fungos em potencial para as condições informadas.</h1>}
                 </div>
         </section>
     );

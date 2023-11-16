@@ -18,7 +18,7 @@ export default function FungiInfo({dados}) {
             <div className="popup-content py-3">
                 <div className="mb-2"><span className='font-semibold'>{dados.nome}</span> <span className='text-sm italic'>({dados.nome_cientifico})</span></div>
                 <p className="text-sm text-gray-700 mr-2"> {dados.descricao}</p>
-                <div className="popup-content-icons flex justify-around text-center">
+                <div className="popup-content-icons pt-2 flex justify-around text-center">
                     <div className="border-dashed border-2 border-gray-400 rounded py-2 px-8">
                         <span className="font-bold">Temperatura</span><br/>de {dados.temp_min}°C a {dados.temp_max}°C
                     </div>
@@ -27,7 +27,13 @@ export default function FungiInfo({dados}) {
                     <span className="font-bold">Umidade</span><br/>de {dados.umidade_min}% a {dados.umidade_max}%
                     </div>
                 </div>
+
+                
             </div>
+
+            <div className="popup-content-control py-5">
+                    <p className="font-bold">Formas de controle:</p>
+                </div>
         </>
     );
 }

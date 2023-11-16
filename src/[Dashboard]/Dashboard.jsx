@@ -1,6 +1,6 @@
 import "./Dashboard.css";
 import logo from "./../img/logo.png";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
 import Analise from "./[Analise]/Analise";
 import Fungis from "./[Fungis]/Fungis";
