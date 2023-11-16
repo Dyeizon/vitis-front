@@ -13,7 +13,7 @@
     background-color: rgba(122, 6, 59, 0.85);
     height: 80px;
     width: 100%;
-    z-index: 400;
+    z-index: 80;
     align-items: center;
     justify-content: space-around;
     position: fixed;

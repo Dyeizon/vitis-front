@@ -4,7 +4,6 @@ import { Carousel } from "@material-tailwind/react";
 export default function FungiInfo({dados}) {
     return (
         <>
-
             <Carousel className="popup-carousel flex rounded-xl mr-7 float-left">
                 {dados.imagem_fungo.map((img_fungo) => (
                     <img
@@ -32,7 +31,7 @@ export default function FungiInfo({dados}) {
             </div>
 
             <div className="popup-content-control py-5">
-                    <p className="font-bold">Formas de controle:</p>
+                    <p className="font-bold">Formas de controle</p>
                 </div>
         </>
     );

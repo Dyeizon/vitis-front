@@ -1,10 +1,12 @@
-import { Fragment, useRef, useState } from 'react'
+import { Fragment, useContext, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { useEffect } from 'react';
 import FungiInfo from '../../[Fungis]/FungiInfo';
+import { VitisContext } from '../../../App';
 
 export default function FungiPopUp({dados, passChildState}) {
     const [open, setOpen] = useState(true);
+    const vitisContext = useContext(VitisContext); 
 
     useEffect(() => {
         passChildState(open);
@@ -34,8 +36,7 @@ export default function FungiPopUp({dados, passChildState}) {
                 <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">
                     <div className="mt-3 sm:ml-4 sm:mt-0 sm:text-left">
-                        <Dialog.Title as="h3" className="text-base leading-6 mb-5 text-gray-900">
-                            
+                        <Dialog.Title as="h3" className="popup-title text-base leading-6 mb-5 text-gray-900">
                             <span>Mais informações sobre o fungo...</span>
                         </Dialog.Title>
 
@@ -47,7 +48,7 @@ export default function FungiPopUp({dados, passChildState}) {
                 <button
                     type="button"
                     className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
-                    onClick={() => setOpen(false)}>Fechar</button>
+                    onClick={() => {setOpen(false); vitisContext.setPopUpOpen(false);}}>Fechar</button>
                 </div>
             </Dialog.Panel>
             </Transition.Child>

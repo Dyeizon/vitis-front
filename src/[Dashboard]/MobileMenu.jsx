@@ -8,7 +8,7 @@ export default function MobileMenu() {
 
     return (
         <>
-            <div className="mobile-menu-bar py-2">
+            <div className="mobile-menu-bar py-2" style={{zIndex: vitisContext.popUpOpen ? '30' : ''}}>
                 <a href="/" className="h-full"><img src={logo} alt="Logo" className="h-full"/></a>
                 <div onClick={() => setOpen(!open)} className="space-y-2">
                     <div className="w-9 h-1 bg-white"></div>

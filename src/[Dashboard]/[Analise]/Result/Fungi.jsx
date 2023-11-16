@@ -1,25 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState, useEffect } from "react";
 import FungiPopUp from "./FungiPopUp";
+import { VitisContext } from "../../../App";
 
 export default function Fungi({dadosFungo}) {
     const [popUp, setPopUp] = useState(false);
     const [childState, setChildState] = useState(false);
+    const vitisContext = useContext(VitisContext);
 
     useEffect(() => {
       setPopUp(childState)
     }, [childState]);
-
-    function handleButton() {
-      setPopUp(!popUp);
-    }
 
     return (
       <>
         {popUp ? <FungiPopUp passChildState={setChildState} dados={dadosFungo}/> : ""}
 
         
-        <div onClick={() => handleButton()} className="max-w-sm rounded overflow-hidden shadow-lg flex flex-col">
+        <div onClick={() => {setPopUp(!popUp); vitisContext.setPopUpOpen(!popUp)}} className="max-w-sm rounded overflow-hidden shadow-lg flex flex-col">
           <div className="analise-fungi-img" style={{backgroundImage: `url(` + dadosFungo.imagem_fungo[0].img  + `)`}}></div>
           <div className="analise-fungi-info flex flex-col flex-grow px-6 py-4">
             <div className="analise-fungi-name mb-2">
@@ -31,7 +29,7 @@ export default function Fungi({dadosFungo}) {
             <div className="flex-grow" />
     
             <button
-              onClick={() => handleButton()} className="analise-fungi-info-button inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-pink-300"
+              onClick={() => setPopUp(!popUp)} className="analise-fungi-info-button inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-pink-300"
             >
               Saiba mais
               <svg
