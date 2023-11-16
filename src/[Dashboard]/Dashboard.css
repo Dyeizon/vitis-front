@@ -1,3 +1,26 @@
+/* Menu mobile */
+
+.mobile-menu-bar {    
+    display: none;
+    background-color: rgba(122, 6, 59, 0.85);
+    height: 80px;
+    width: 100%;
+    z-index: 400;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+
+.mobile-menu-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 aside {
     background-color: rgba(122, 6, 59, 0.85);
     color: white;
@@ -32,4 +55,11 @@ hr {
 .dashboard-content {
     background-color: #F6EEE8;
     min-height: 100vh;
+}
+
+@media (max-width: 540px) {
+    .mobile-menu-bar { display: flex; }
+    .dashboard-content {
+        padding-top: 100px;
+    }
 }

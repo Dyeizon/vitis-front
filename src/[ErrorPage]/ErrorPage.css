@@ -7,19 +7,6 @@
     height: 100vh;
 }
 
-@keyframes logo-animation {
-    0% {
-        opacity: 0.8;
-        scale: 1;
-    }  
-    
-    100% {
-        opacity: 1;
-        scale: 1.1;
-    }
-   
-}
-
 #error-page img {
     width: 15%;
     opacity: 0.8;
@@ -33,4 +20,18 @@
 #error-page h1 {
     font-size: 2em;
     font-weight: bold;
+}
+
+
+@keyframes logo-animation {
+    0% {
+        opacity: 0.8;
+        scale: 1;
+    }  
+    
+    100% {
+        opacity: 1;
+        scale: 1.1;
+    }
+   
 }

@@ -6,7 +6,7 @@ export default function Home() {
         <>
             <div className="home">
                 <header>
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="Logo" />
                 </header>
                 <main>
                     <h1>Vitis</h1>

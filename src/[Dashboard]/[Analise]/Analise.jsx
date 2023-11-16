@@ -19,9 +19,10 @@ export default function Analise() {
         return (vitisContext.temp >= fungi.temp_min && fungi.temp_max >= vitisContext.temp) && (vitisContext.humidity >= fungi.umidade_min && fungi.umidade_max >= vitisContext.humidity);
     }
 
+    
     useEffect(() => {
         setValidFungis(fungis.filter(fungisValidator));
-    }, [vitisContext.temp, vitisContext.humidity, vitisContext.cycle]);
+    }, [vitisContext.temp, vitisContext.humidity, vitisContext.cycle]);// eslint-disable-line
 
     useEffect(() => {
       getFungis();
@@ -33,7 +34,7 @@ export default function Analise() {
         vitisContext.setCity(null);
         vitisContext.setCycle(null);
       };
-    }, []);
+    }, []);// eslint-disable-line
 
     async function getFungis() {
         const { data } = await supabase.from('fungo').select('*, imagem_fungo!inner(img)').order('id', { ascending: true });
@@ -50,7 +51,7 @@ export default function Analise() {
                     <CityInfo/>
                     <hr/>
                     
-                    <h1 className="text-xl p-10">Fungos potenciais em <span className="font-bold">{vitisContext.city}</span></h1>
+                    <h1 className="text-xl p-10">Potenciais fungos em <span className="font-bold">{vitisContext.city}</span></h1>
                     <ul className="common-fungis" style={{display: vitisContext.city && vitisContext.cycle ? '' : 'none'}}>
 
                     {validFungis.length > 0 ? validFungis.map((fungo) => (

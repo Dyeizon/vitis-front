@@ -7,11 +7,14 @@ import Fungis from "./[Fungis]/Fungis";
 import Cycles from "./[Cycles]/Cycles";
 import AboutUs from "./[AboutUs]/AboutUs";
 
+import MobileMenu from "./MobileMenu";
+
 export default function Dashboard() {
     const [selected, setSelected] = useState("analise");
 
     return (
-        <section className="dashboard">          
+        <section className="dashboard">   
+            <MobileMenu/>
             <aside className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
                 <div className="info">
                     <a href="/" className="flex justify-center items-center p-2 text-white">
