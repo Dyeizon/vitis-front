@@ -77,11 +77,11 @@ hr {
     min-height: 100vh;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 720px) {
     .mobile-menu-content { display: none !important; }
 }
 
-@media (max-width: 539px) {
+@media (max-width: 719px) {
     .mobile-menu-bar { display: flex; }
     .dashboard-content {
         padding-top: 100px;

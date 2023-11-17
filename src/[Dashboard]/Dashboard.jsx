@@ -16,7 +16,7 @@ export default function Dashboard() {
     return (
         <section className="dashboard">   
             <MobileMenu/>
-            <aside className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+            <aside className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full md:translate-x-0" aria-label="Sidebar">
                 <div className="info">
                     <a href="/" className="flex justify-center items-center p-2 text-white">
                         <span className="mx-3">Vitis</span>
@@ -43,7 +43,7 @@ export default function Dashboard() {
                 </div>
             </aside>
 
-            <div className="dashboard-content p-4 sm:ml-64">
+            <div className="dashboard-content p-4 md:ml-64">
                 {vitisContext.currentPage === "analise" ? <Analise/> : ""}
                 {vitisContext.currentPage === "fungis" ? <Fungis/> : ""}
                 {vitisContext.currentPage === "cycles" ? <Cycles/> : ""}

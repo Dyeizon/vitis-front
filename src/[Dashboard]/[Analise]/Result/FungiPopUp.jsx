@@ -35,7 +35,7 @@ export default function FungiPopUp({dados, passChildState}) {
             <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all w-11/12">
                 <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">
-                    <div className="mt-3 sm:ml-4 sm:mt-0 sm:text-left">
+                    <div className="mt-3 sm:mt-0 sm:text-left">
                         <Dialog.Title as="h3" className="popup-title text-base leading-6 mb-5 text-gray-900">
                             <span>Mais informações sobre o fungo...</span>
                         </Dialog.Title>

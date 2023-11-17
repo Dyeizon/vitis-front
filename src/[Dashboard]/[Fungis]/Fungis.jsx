@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../../App";
-import FungiCard from "./FungiCard";
+import FungiInfo from "./FungiInfo";
 import React from "react";
 
 export default function Fungis() {
@@ -12,7 +12,7 @@ export default function Fungis() {
 
     async function getFungos() {
         const { data } = await supabase.from('fungo').select('*, imagem_fungo!inner(img)').order('id', { ascending: true });
-      setFungos(data);
+        setFungos(data);
     }
 
     return (
@@ -21,7 +21,7 @@ export default function Fungis() {
                 {fungos.map((fungo) => (
                     <React.Fragment key={fungo.id}>
                         <li className="py-8 mx-10" id={`fungo`+fungo.id} >
-                            <FungiCard info={fungo}/> 
+                            <FungiInfo dados={fungo}/> 
                         </li>
                         <hr/>
                     </React.Fragment>

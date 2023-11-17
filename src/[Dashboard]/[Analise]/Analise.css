@@ -232,7 +232,7 @@
 
     .popup-content > p {
         text-align: justify;
-        height: 180px;
+        max-height: 150px;
     }
 
     .popup-content-icons { padding-top: 20px;}
@@ -265,16 +265,6 @@
 }
 
 @media (max-width: 740px) {
-    .popup-content-icons {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .popup-content-icons > div {
-        width: 70%;
-    }
-
     .popup-carousel {
         height: 200px;
     }
@@ -286,23 +276,20 @@
     }    
 }
 
-@media (max-width: 640px) {
-    /* .analise-cycles-grid {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 20px;
-    } */
-
-    .analise-cycles-grid > button {
-        width: 120px;
-        height: 120px;
-    }
-}
-
 @media (max-width: 540px) {
    .analise-cycles-grid > button {
         width: 150px;
         height: 150px;
+    }
+
+    .popup-content-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .popup-content-icons > div {
+        width: 70%;
     }
 
 }

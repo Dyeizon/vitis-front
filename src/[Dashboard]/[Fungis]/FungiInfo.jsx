@@ -31,8 +31,11 @@ export default function FungiInfo({dados}) {
             </div>
 
             <div className="popup-content-control py-5">
-                    <p className="font-bold">Formas de controle</p>
+                <p className="font-bold">Formas de controle</p>
+                <div className="popup-content-control-items">
+                    
                 </div>
+            </div>
         </>
     );
 }
