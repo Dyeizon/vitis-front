@@ -12,12 +12,8 @@ export default function Cycles() {
     }, []);
 
     async function getCiclos() {
-        //const { data } = await supabase.from('ciclo').select('*, imagem_ciclo!inner(img), fungo_ciclo!inner(id_fungo)').order('id', { ascending: true });
-        const { data } = await supabase.from('ciclo').select('*, imagem_ciclo(img), fungo_ciclo(id_fungo)').order('id', { ascending: true });
+        const { data } = await supabase.from('ciclo').select('*, imagem_ciclo(id, img), fungo_ciclo(id_fungo)').order('id', { ascending: true });
         setCiclos(data);
-
-
-        console.log(data);
     }
 
     return (

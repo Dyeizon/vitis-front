@@ -3,10 +3,17 @@ import { Carousel } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
 import { VitisContext, supabase } from "../../App";
 import { useHref } from "react-router-dom";
-
 export default function CycleInfo({dados}) {
     const [nomeFungos, setNomeFungos] = useState([]);
     const vitisContext = useContext(VitisContext);
+
+    function sortImgByID(a, b) {
+        return a.id - b.id;
+    }
+
+    dados.imagem_ciclo.sort(sortImgByID);
+
+
 
     useEffect(() => {
         getNomeFungos();
@@ -22,6 +29,7 @@ export default function CycleInfo({dados}) {
     return (
         <>
             <Carousel className="popup-carousel flex rounded-xl mr-7 float-left">
+                {console.log(dados.imagem_ciclo)}
                 {dados.imagem_ciclo.map((img_ciclo) => (
                     <img
                         key={img_ciclo}
@@ -37,35 +45,14 @@ export default function CycleInfo({dados}) {
 
                     <a onClick={() => vitisContext.setCurrentPage('fungis')} href="https://xerosource.com/scroll-to-id-from-different-page-in-reactjs/" target="_blank">https://xerosource.com/scroll-to-id-from-different-page-in-reactjs/</a>
 
-                <div style={{display: nomeFungos == 0 ? 'none' : ''}} className="mt-4 text-sm">
+                <div style={{display: nomeFungos === 0 ? 'none' : ''}} className="mt-4 text-sm">
                     <h3 className="font-bold inline text-gray-800">Fungos atuantes: </h3>
                     <ul className="inline">
-                        {nomeFungos.map((row, index) => {
-                            // Último                        
-                            if(index + 1 == nomeFungos.length) {
-                                return (
-                                    <React.Fragment key={index}>
-                                        <li className="inline"> {row}.</li>
-                                    </React.Fragment>
-                                )
-                            }
-
-                            // Penúltimo
-                            if(index + 2 == nomeFungos.length) {
-                                return (
-                                    <React.Fragment key={index}>
-                                        <li className="inline">{row} e</li>
-                                    </React.Fragment>
-                                )
-                            }
-
-                            // Outros
-                            return (
+                        {nomeFungos.length > 0 ? nomeFungos.sort().map((row, index) => (
                             <React.Fragment key={index}>
-                                <li className="inline">{row}, </li>
+                                <li className="inline"> {row}{index + 1 === nomeFungos.length ? '.' : (index + 2 === nomeFungos.length) ? ' e' : ','}</li>
                             </React.Fragment>
-                            )
-                        })}
+                        )) : 'Nossa base de dados não identificou nenhum fungo para este ciclo.'}
                     </ul>
                 </div>
             </div>
