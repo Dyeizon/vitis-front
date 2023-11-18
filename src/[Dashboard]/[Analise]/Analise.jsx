@@ -51,15 +51,19 @@ export default function Analise() {
                     <CityInfo/>
                     <hr/>
                     
-                    <h1 className="text-xl p-10 text-center">Potenciais fungos em <span className="font-bold">{vitisContext.city}</span></h1>
-                    <ul className="common-fungis" style={{display: vitisContext.city && vitisContext.cycle ? '' : 'none'}}>
+                    <h1 className="text-xl p-10 text-center">Potenciais fungos em <span className="font-bold">{vitisContext.city}</span> no periodo de <span className="font-bold">{vitisContext.cycle}</span></h1>
+                    {vitisContext.cycle === 'Dormência' ? <h1 className="text-md text-red-600 text-center">Alguns fungos podem sobreviver durante esse ciclo, mas ficam inativos.<br/><a className="underline text-blue-700 cursor-pointer" onClick={() => vitisContext.setCurrentPage('cycles')}>Verifique a página de ciclos</a></h1> : ''}
 
+                    {vitisContext.cycle != 'Dormência' ? 
+                    <ul className="common-fungis" style={{display: vitisContext.city && vitisContext.cycle ? '' : 'none'}}>
                     {validFungis.length > 0 ? validFungis.map((fungo) => (
                             <li key={fungo.id}>
                                 <Fungi dadosFungo={fungo}/>
                             </li>
                         )) : ""}
                     </ul>
+                    : ''}
+                    
 
                     {validFungis.length > 0 ? "" : <h1 className="text-lg text-red-700 font-bold text-center">Não foram encontrados fungos em potencial para as condições informadas.</h1>}
                 </div>

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Carousel } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
 import { VitisContext, supabase } from "../../App";
-import { useHref } from "react-router-dom";
+
 export default function CycleInfo({dados}) {
     const [nomeFungos, setNomeFungos] = useState([]);
     const vitisContext = useContext(VitisContext);
@@ -12,8 +12,6 @@ export default function CycleInfo({dados}) {
     }
 
     dados.imagem_ciclo.sort(sortImgByID);
-
-
 
     useEffect(() => {
         getNomeFungos();
@@ -43,12 +41,12 @@ export default function CycleInfo({dados}) {
                 <h2 className='font-semibold'>{dados.nome}</h2>
                 <h3 className="text-sm text-gray-700 mr-2 mt-2 md:h-32"> {dados.resumo}</h3>
 
-                    <a onClick={() => vitisContext.setCurrentPage('fungis')} href="https://xerosource.com/scroll-to-id-from-different-page-in-reactjs/" target="_blank">https://xerosource.com/scroll-to-id-from-different-page-in-reactjs/</a>
+                    <a onClick={() => vitisContext.setCurrentPage('fungis')} href="#teste">teste</a>
 
                 <div style={{display: nomeFungos === 0 ? 'none' : ''}} className="mt-4 text-sm">
                     <h3 className="font-bold inline text-gray-800">Fungos atuantes: </h3>
                     <ul className="inline">
-                        {nomeFungos.length > 0 ? nomeFungos.sort().map((row, index) => (
+                        {nomeFungos.length > 0 && nomeFungos ? nomeFungos.sort().map((row, index) => (
                             <React.Fragment key={index}>
                                 <li className="inline"> {row}{index + 1 === nomeFungos.length ? '.' : (index + 2 === nomeFungos.length) ? ' e' : ','}</li>
                             </React.Fragment>
