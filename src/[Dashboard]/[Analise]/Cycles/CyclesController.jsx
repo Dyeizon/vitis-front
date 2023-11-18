@@ -8,7 +8,7 @@ import crescimentoImg from "./../../../img/crescimento.jpg";
 import maturacaoImg from "./../../../img/maturacao.jpg";
 import { VitisContext } from "./../../../App";
 
-export default function ControladorCiclos({children}) {
+export default function ControladorCiclos() {
     const [selectedButton, setSelectedButton] = useState(null);
     const vitisContext = useContext(VitisContext);
 
@@ -20,11 +20,11 @@ export default function ControladorCiclos({children}) {
     return (
         <div className="analise-cycles">
             <div className="analise-cycles-grid">
-                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={'Dormência'} img={dormenciaImg} text="Dormência"/>
-                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={'Brotação'} img={brotacaoImg} text="Brotação"/>
-                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={'Floração'} img={floracaoImg} text="Floração"/>
-                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={'Crescimento dos Cachos'} img={crescimentoImg} text={"Crescimento\ndos cachos"}/>
-                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={'Maturação'} img={maturacaoImg} text="Maturação"/>
+                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={1} img={dormenciaImg} text="Dormência"/>
+                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={2} img={brotacaoImg} text="Brotação"/>
+                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={3} img={floracaoImg} text="Floração"/>
+                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={4} img={crescimentoImg} text={"Crescimento\ndos cachos"}/>
+                <CycleCard onClickEvent={handleButtonClick} selectedButton={selectedButton} cycleID={5} img={maturacaoImg} text="Maturação"/>
             </div>
         </div>
     );

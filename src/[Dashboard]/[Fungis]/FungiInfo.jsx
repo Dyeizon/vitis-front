@@ -19,11 +19,12 @@ export default function FungiInfo({dados}) {
                 <p className="text-sm text-gray-700 mr-2"> {dados.descricao}</p>
                 <div className="popup-content-icons pt-2 flex justify-around text-center">
                     <div className="border-dashed border-2 border-gray-400 rounded py-2 px-8">
-                        <span className="font-bold">Temperatura</span><br/>de {dados.temp_min}°C a {dados.temp_max}°C
+                        <span className="font-bold">Temperatura</span><br/><span>de {dados.temp_min}°C a {dados.temp_max}°C</span>
                     </div>
 
                     <div className="border-dashed border-2 border-gray-400 rounded py-2 px-8">
-                    <span className="font-bold">Umidade</span><br/>de {dados.umidade_min}% a {dados.umidade_max}%
+                        <span className="font-bold">Umidade</span><br/>
+                        {dados.umidade_min === 0 ? <span>até {dados.umidade_max}%</span> : (dados.umidade_max === 100) ? <span>acima de {dados.umidade_min}%</span> : <span>de {dados.umidade_min}% a {dados.umidade_max}%</span>}
                     </div>
                 </div>
             </div>

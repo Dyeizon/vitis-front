@@ -1,0 +1,12 @@
+.about-us-img-all {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-us-profile {
+    background: linear-gradient(to bottom, rgba(122, 6, 59, 0.85), #F46EA9);
+}
