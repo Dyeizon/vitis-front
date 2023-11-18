@@ -44,8 +44,6 @@ export default function CycleInfo({dados}) {
                 <h2 className='font-semibold'>{dados.nome}</h2>
                 <h3 className="text-sm text-gray-700 mr-2 mt-2 md:h-32"> {dados.resumo}</h3>
 
-                    <a onClick={() => {vitisContext.setCurrentPage('fungis'); vitisContext.setFungiRefID('fungo2')}} href="#t">teste</a>
-
                 <div style={{display: nomeFungos === 0 ? 'none' : ''}} className="mt-4 text-sm">
                     <h3 className="font-bold inline text-gray-800">Fungos atuantes: </h3>
                     <ul className="inline">

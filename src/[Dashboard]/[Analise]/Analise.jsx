@@ -59,9 +59,9 @@ export default function Analise() {
                     <hr/>
                     
                     <h1 className="text-xl p-10 text-center">Potenciais fungos em <span className="font-bold">{vitisContext.city}</span> no periodo de <span className="font-bold">{vitisContext.cycle}</span></h1>
-                    {vitisContext.cycle === 'Dormência' ? <h1 className="text-md text-red-600 text-center">Alguns fungos podem sobreviver durante esse ciclo, mas ficam inativos.<br/><a className="underline text-blue-700 cursor-pointer" onClick={() => vitisContext.setCurrentPage('cycles')}>Verifique a página de ciclos</a></h1> : ''}
+                    {vitisContext.cycle === 'Dormência' ? <h1 className="text-md text-red-600 text-center">Alguns fungos podem sobreviver durante esse ciclo, mas ficam inativos.<br/><button className="underline text-blue-700 cursor-pointer" onClick={() => vitisContext.setCurrentPage('cycles')}>Verifique a página de ciclos</button></h1> : ''}
 
-                    {vitisContext.cycle != 'Dormência' ? 
+                    {vitisContext.cycle !== 'Dormência' ? 
                     <ul className="common-fungis" style={{display: vitisContext.city && vitisContext.cycle ? '' : 'none'}}>
                     {validFungis.length > 0 ? validFungis.map((fungo) => (
                             <li key={fungo.id}>
@@ -72,7 +72,7 @@ export default function Analise() {
                     : ''}
                     
 
-                    {vitisContext.cycle === 'Dormência' && validFungis.length > 0 ? "" : <h1 className="text-lg text-red-700 font-bold text-center">Não foram encontrados fungos em potencial para as condições informadas.</h1>}
+                    {vitisContext.cycle === 'Dormência' || validFungis.length > 0 ? "" : <h1 className="text-lg text-red-700 font-bold text-center">Não foram encontrados fungos em potencial para as condições informadas.</h1>}
                 </div>
         </section>
     );

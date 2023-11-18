@@ -26,8 +26,6 @@ export default function FungiInfo({dados}) {
                     <span className="font-bold">Umidade</span><br/>de {dados.umidade_min}% a {dados.umidade_max}%
                     </div>
                 </div>
-
-                
             </div>
 
             <div className="popup-content-control py-5">

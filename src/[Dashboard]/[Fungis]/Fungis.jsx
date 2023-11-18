@@ -21,9 +21,7 @@ export default function Fungis() {
     async function goToFungi() {
         await delay(500);
         const element = document.getElementById(vitisContext.fungiRefID);
-        console.log(vitisContext.fungiRefID);
         if (element) element.scrollIntoView({ behavior: 'smooth', block: 'start'});
-        console.log(element);
     }
 
     async function getFungos() {
@@ -43,8 +41,6 @@ export default function Fungis() {
                     </div>
                 ))}
             </ul>
-
-            <h1 id="teste">test</h1>
         </section>
     );
 

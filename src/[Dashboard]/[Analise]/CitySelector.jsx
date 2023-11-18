@@ -31,7 +31,6 @@ export default function CitySelector() {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${selectedOption.label},SC,BR&lang=pt_br&units=metric&appid=bb186615f7a8211e4664a8c376adf145`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         vitisContext.setTemp(data.main.temp);
         vitisContext.setHumidity(data.main.humidity);
         vitisContext.setCity(data.name);
