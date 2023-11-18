@@ -1,24 +1,30 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
 import { supabase } from "../../App";
 import FungiInfo from "./FungiInfo";
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { VitisContext } from "../../App";
 
 export default function Fungis() {
     const [fungos, setFungos] = useState([]);
     const scrollToElementRef = useRef(null);
+    const vitisContext = useContext(VitisContext);
 
-    const location = useLocation();
+    const delay = ms => new Promise(
+        resolve => setTimeout(resolve, ms)
+      );
 
     useEffect(() => {
-      getFungos();
-      
+        getFungos();
+        goToFungi();
+    }, []); //eslint-disable-line
 
-      if (scrollToElementRef.current) {
-        console.log(scrollToElementRef.current)
-        scrollToElementRef.current.scrollIntoView();
-      }
-    }, []);
+    async function goToFungi() {
+        await delay(500);
+        const element = document.getElementById(vitisContext.fungiRefID);
+        console.log(vitisContext.fungiRefID);
+        if (element) element.scrollIntoView({ behavior: 'smooth', block: 'start'});
+        console.log(element);
+    }
 
     async function getFungos() {
         const { data } = await supabase.from('fungo').select('*, imagem_fungo!inner(img)').order('id', { ascending: true });

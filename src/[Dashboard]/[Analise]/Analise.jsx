@@ -16,7 +16,14 @@ export default function Analise() {
     const [validFungis, setValidFungis] = useState([]);
     
     function fungisValidator(fungi) {
-        return (vitisContext.temp >= fungi.temp_min && fungi.temp_max >= vitisContext.temp) && (vitisContext.humidity >= fungi.umidade_min && fungi.umidade_max >= vitisContext.humidity);
+        console.log(fungi);
+        return ( 
+            (vitisContext.temp >= fungi.temp_min && fungi.temp_max >= vitisContext.temp) 
+            && 
+            (vitisContext.humidity >= fungi.umidade_min && fungi.umidade_max >= vitisContext.humidity)
+            &&
+            (vitisContext.cycle )
+        );
     }
 
     
@@ -65,7 +72,7 @@ export default function Analise() {
                     : ''}
                     
 
-                    {validFungis.length > 0 ? "" : <h1 className="text-lg text-red-700 font-bold text-center">Não foram encontrados fungos em potencial para as condições informadas.</h1>}
+                    {vitisContext.cycle === 'Dormência' && validFungis.length > 0 ? "" : <h1 className="text-lg text-red-700 font-bold text-center">Não foram encontrados fungos em potencial para as condições informadas.</h1>}
                 </div>
         </section>
     );

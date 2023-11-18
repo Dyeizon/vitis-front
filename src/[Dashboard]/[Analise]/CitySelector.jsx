@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Select from "react-select";
 
 import { VitisContext } from "../../App";
@@ -7,7 +7,7 @@ export default function CitySelector() {
   const [cities, setCities] = useState([]);
   const [selectedCity, setSelectedCity] = useState(null);
 
-  const vitisContext = React.useContext(VitisContext);
+  const vitisContext = useContext(VitisContext);
 
   useEffect(() => {
     fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados/SC/municipios")

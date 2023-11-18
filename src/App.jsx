@@ -39,9 +39,10 @@ export default function App() {
   const [city, setCity] = useState();
   const [popUpOpen, setPopUpOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState('analise');
+  const [fungiRefID, setFungiRefID] = useState(null);
 
   return (
-    <VitisContext.Provider value={{temp, setTemp, cycle, setCycle, humidity, setHumidity, city, setCity, popUpOpen, setPopUpOpen, currentPage, setCurrentPage}}>
+    <VitisContext.Provider value={{temp, setTemp, cycle, setCycle, humidity, setHumidity, city, setCity, popUpOpen, setPopUpOpen, currentPage, setCurrentPage, fungiRefID, setFungiRefID}}>
       <RouterProvider router={router}/>
     </VitisContext.Provider>
   );
