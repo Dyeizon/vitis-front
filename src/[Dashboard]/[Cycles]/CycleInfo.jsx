@@ -49,7 +49,7 @@ export default function CycleInfo({dados}) {
                     <ul className="inline">
                         {nomeFungos.length > 0 && nomeFungos ? nomeFungos.sort(sortFungiNamesAsc).map((row, index) => (
                             <React.Fragment key={index}>
-                                <li className="inline"> <a className="underline text-blue-700 cursor-pointer" onClick={() => {vitisContext.setCurrentPage('fungis'); vitisContext.setFungiRefID(`fungo${row.id}`)}} href={`#fungo${row.id}`}>{row.nome}</a>{index + 1 === nomeFungos.length ? '.' : (index + 2 === nomeFungos.length) ? ' e' : ','}</li>
+                                <li className="inline"> <button className="underline text-blue-700 cursor-pointer" onClick={() => {vitisContext.setCurrentPage('fungis'); vitisContext.setFungiRefID(`fungo${row.id}`)}}>{row.nome}</button>{index + 1 === nomeFungos.length ? '.' : (index + 2 === nomeFungos.length) ? ' e' : ','}</li>
                             </React.Fragment>
                         )) : 'Nossa base de dados não identificou nenhum fungo para este ciclo.'}
                     </ul>

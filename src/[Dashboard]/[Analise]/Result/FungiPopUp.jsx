@@ -44,10 +44,15 @@ export default function FungiPopUp({dados, passChildState}) {
                     </div>
                 </div>
                 </div>
-                <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row justify-end sm:px-6">
                 <button
                     type="button"
-                    className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
+                    className="my-2 inline-flex w-full justify-center rounded-md bg-blue-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 sm:ml-3 sm:w-auto"
+                    onClick={() => {setOpen(false); vitisContext.setPopUpOpen(false); vitisContext.setCurrentPage('fungis'); vitisContext.setFungiRefID(`fungo${dados.id}`)}}>Ver tratamentos e recomendações</button>
+
+                <button
+                    type="button"
+                    className="my-2 inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
                     onClick={() => {setOpen(false); vitisContext.setPopUpOpen(false);}}>Fechar</button>
                 </div>
             </Dialog.Panel>

@@ -16,16 +16,21 @@ export default function Fungis() {
     useEffect(() => {
         getFungos();
         goToFungi();
+
+        return () => {
+            vitisContext.setFungiRefID(null);
+        };
     }, []); //eslint-disable-line
 
     async function goToFungi() {
         await delay(500);
         const element = document.getElementById(vitisContext.fungiRefID);
         if (element) element.scrollIntoView({ behavior: 'smooth', block: 'start'});
+        console.log(element);
     }
 
     async function getFungos() {
-        const { data } = await supabase.from('fungo').select('*, imagem_fungo!inner(img)').order('id', { ascending: true });
+        const { data } = await supabase.from('fungo').select('*, imagem_fungo!inner(img)').order('nome', { ascending: true });
         setFungos(data);
     }
 
@@ -36,6 +41,12 @@ export default function Fungis() {
                     <div id={`fungo`+fungo.id} ref={scrollToElementRef} key={fungo.id}>
                         <li  className="py-8 mx-10">
                             <FungiInfo dados={fungo}/>
+                            <div className="text-center md:text-left py-5">
+                                <p className="font-bold">Formas de controle</p>
+                                <div className="popup-content-control-items">
+                                    
+                                </div>
+                            </div>
                         </li>
                         <hr/>
                     </div>

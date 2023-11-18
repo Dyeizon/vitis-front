@@ -14,9 +14,7 @@ export default function Fungi({dadosFungo}) {
 
     return (
       <>
-        {popUp ? <FungiPopUp passChildState={setChildState} dados={dadosFungo}/> : ""}
-
-        
+        {popUp ? <FungiPopUp passChildState={setChildState} dados={dadosFungo}/> : ""}  
         <div onClick={() => {setPopUp(!popUp); vitisContext.setPopUpOpen(!popUp)}} className="max-w-sm rounded overflow-hidden shadow-lg flex flex-col">
           <div className="analise-fungi-img" style={{backgroundImage: `url(` + dadosFungo.imagem_fungo[0].img  + `)`}}></div>
           <div className="analise-fungi-info flex flex-col flex-grow px-6 py-4">
