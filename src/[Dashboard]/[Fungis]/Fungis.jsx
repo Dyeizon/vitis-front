@@ -170,7 +170,7 @@ export default function Fungis() {
                                     <p className="font-bold">Tratamentos</p>
                                 </div>
 
-                                <ul className="list-disc">
+                                <ul className="list-disc list-inside">
                                     {fungo.tratamento.map((row) => {
                                         if(row.tipo === "Tratamento") {
                                             return(
