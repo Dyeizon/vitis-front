@@ -8,6 +8,8 @@ export default function Fungis() {
     const [fungos, setFungos] = useState([]);
     const scrollToElementRef = useRef(null);
     const vitisContext = useContext(VitisContext);
+    const [recomendacoes, setRecomendacoes] = useState([]);
+    const [tratamentos, setTratamentos] = useState([]);
 
     const delay = ms => new Promise(
         resolve => setTimeout(resolve, ms)
@@ -15,6 +17,7 @@ export default function Fungis() {
 
     useEffect(() => {
         getFungos();
+        getRecomendacoesTratamentos();
         goToFungi();
 
         return () => {
@@ -29,10 +32,20 @@ export default function Fungis() {
     }
 
     async function getFungos() {
-        const { data } = await supabase.from('fungo').select('*, imagem_fungo!inner(img), tratamento(descricao, tipo)').order('nome', { ascending: true });
-        console.log(data);
+        const { data } = await supabase.from('fungo').select('*, imagem_fungo!inner(img)').order('nome', { ascending: true });
         setFungos(data);
     }
+
+    async function getRecomendacoesTratamentos() {
+        const { data:rec } = await supabase.from('tratamento').select('id, descricao, id_fungo').eq('tipo', 'R').order('descricao', { ascending: true });
+        console.log(rec);
+        setRecomendacoes(rec);
+
+        const { data:trat } = await supabase.from('tratamento').select('id, descricao, id_fungo').eq('tipo', 'T').order('descricao', { ascending: true });
+        console.log(trat);
+        setTratamentos(trat);
+    }
+    
 
     return (
         <section>
@@ -42,8 +55,8 @@ export default function Fungis() {
                         <li  className="py-8 mx-10">
                             <FungiInfo dados={fungo}/>
 
-                            <div className="float-left py-5">
-                                <div className="flex align-center gap-2 leading-relaxed">
+                            <div className="float-left mb-5">
+                                <div className="flex align-center gap-2 leading-relaxed mt-5">
                                     <svg className="inline" height="24px" width="24px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
                                         viewBox="0 0 47.94 47.94" xmlSpace="preserve">
                                     <path style={{fill:'#ED8A19'}} d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
@@ -57,17 +70,17 @@ export default function Fungis() {
                                 </div>
 
                                 <ul className="list-disc list-inside">
-                                    {fungo.tratamento.map((row) => {
-                                        if(row.tipo === "Recomendação") {
+                                    {recomendacoes.map((row) => {
+                                        if(row.id_fungo === fungo.id) {
                                             return(
-                                                <li>{row.descricao}</li>
+                                                <li key={row.id}>{row.descricao}</li>
                                             );
                                         }
                                         return(<></>);
                                     })}
                                 </ul>
 
-                                <div className="flex align-center gap-2 leading-relaxed">
+                                <div className="flex align-center gap-2 leading-relaxed mt-5">
                                     <svg height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
                                         viewBox="0 0 512.001 512.001" xmlSpace="preserve">
                                     <path style={{fill:'#2197D8'}} d="M12.715,467.755c-0.33,0.024-0.672,0.037-1.002,0.037c-0.855,0-1.71-0.049-2.553-0.147
@@ -170,11 +183,12 @@ export default function Fungis() {
                                     <p className="font-bold">Tratamentos</p>
                                 </div>
 
-                                <ul className="list-disc list-inside">
-                                    {fungo.tratamento.map((row) => {
-                                        if(row.tipo === "Tratamento") {
+                                <ul>
+                                    {tratamentos.map((row, index) => {
+                                        console.log("Length: " + tratamentos.length)
+                                        if(row.id_fungo === fungo.id) {
                                             return(
-                                                <li>{row.descricao}</li>
+                                                <li key={row.id} className="inline">{row.descricao}{index + 1 === tratamentos.length ? '.' : (index + 2 ===  tratamentos.length) ? ' e' : ','} </li>
                                             );
                                         }
                                         return(<></>);
