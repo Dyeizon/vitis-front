@@ -48,7 +48,7 @@ export default function FungiPopUp({dados, passChildState}) {
                 <button
                     type="button"
                     className="my-2 inline-flex w-full justify-center rounded-md bg-blue-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 sm:ml-3 sm:w-auto"
-                    onClick={() => {setOpen(false); vitisContext.setPopUpOpen(false); vitisContext.setCurrentPage('fungis'); vitisContext.setFungiRefID(`fungo${dados.id}`)}}>Ver tratamentos e recomendações</button>
+                    onClick={() => {setOpen(false); vitisContext.setPopUpOpen(false); vitisContext.setCurrentPage('fungis'); vitisContext.setFungiRefID(`fungo${dados.id}`)}}>Ver recomendações e tratamentos</button>
 
                 <button
                     type="button"
