@@ -8,5 +8,6 @@
 }
 
 .about-us-profile {
-    background: linear-gradient(to bottom, rgba(122, 6, 59, 0.85), #F46EA9);
+    background-image: linear-gradient(to bottom, rgba(122, 6, 59, 0.85), #F46EA9);
 }
+

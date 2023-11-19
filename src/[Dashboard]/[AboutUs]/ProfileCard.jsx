@@ -1,6 +1,6 @@
-export default function ProfileCard({imagem, nome, github, linkedin, instagram}) {
+export default function ProfileCard({imagem, nome, github, linkedin}) {
     return (
-        <div className="about-us-profile m-auto w-72 px-6 py-6 text-center rounded-lg lg:mt-0 xl:px-10">
+        <div className="about-us-profile flex-grow hover:scale-105 transition-all m-auto w-72 p-6 text-center rounded-lg lg:mt-0 xl:px-10">
                 <div className="space-y-4 xl:space-y-6">
                     <img className="mx-auto rounded-full h-40 w-40" src={imagem} alt="Avatar do autor"/>
                     <div className="space-y-2">

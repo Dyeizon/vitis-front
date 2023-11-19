@@ -16,7 +16,6 @@ export default function AboutUs() {
 
     async function getInfo() {
         const { data } = await supabase.from('grupo').select('*').order('nome', {ascending: true});
-        console.log(data);
         if(data) setProfiles(data);
     }
 
