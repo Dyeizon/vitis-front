@@ -8,6 +8,15 @@
 }
 
 .about-us-profile {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    
+    cursor: grab;
+
     background-image: linear-gradient(to bottom, rgba(122, 6, 59, 0.85), #F46EA9);
 }
 
+.about-us-profile:active {
+    cursor: grabbing;
+}

@@ -2,7 +2,7 @@ export default function ProfileCard({imagem, nome, github, linkedin}) {
     return (
         <div className="about-us-profile flex-grow hover:scale-105 transition-all m-auto w-72 p-6 text-center rounded-lg lg:mt-0 xl:px-10">
                 <div className="space-y-4 xl:space-y-6">
-                    <img className="mx-auto rounded-full h-40 w-40" src={imagem} alt="Avatar do autor"/>
+                    <img unselectable="on" className="pointer-events-none profile-photo mx-auto rounded-full h-40 w-40" src={imagem} alt="Avatar do autor"/>
                     <div className="space-y-2">
                         <div className="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
                             <h3 className="text-white">{nome}</h3>
