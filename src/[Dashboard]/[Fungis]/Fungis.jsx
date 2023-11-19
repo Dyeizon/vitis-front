@@ -38,14 +38,11 @@ export default function Fungis() {
 
     async function getRecomendacoesTratamentos() {
         const { data:rec } = await supabase.from('tratamento').select('id, descricao, id_fungo').eq('tipo', 'R').order('descricao', { ascending: true });
-        console.log(rec);
         setRecomendacoes(rec);
 
         const { data:trat } = await supabase.from('tratamento').select('id, descricao, id_fungo').eq('tipo', 'T').order('descricao', { ascending: true });
-        console.log(trat);
         setTratamentos(trat);
     }
-    
 
     return (
         <section>
@@ -76,7 +73,7 @@ export default function Fungis() {
                                                 <li key={row.id}>{row.descricao}</li>
                                             );
                                         }
-                                        return(<></>);
+                                        return(<React.Fragment key={row.id}></React.Fragment>);
                                     })}
                                 </ul>
 
@@ -183,15 +180,17 @@ export default function Fungis() {
                                     <p className="font-bold">Tratamentos</p>
                                 </div>
 
-                                <ul>
-                                    {tratamentos.map((row, index) => {
-                                        console.log("Length: " + tratamentos.length)
+                                <ul className="tratamentos">
+                                    {tratamentos.map((row, i) => {
+                                        console.log("length: " + tratamentos.length)
+                                        console.log("i: " + i);
                                         if(row.id_fungo === fungo.id) {
                                             return(
-                                                <li key={row.id} className="inline">{row.descricao}{index + 1 === tratamentos.length ? '.' : (index + 2 ===  tratamentos.length) ? ' e' : ','} </li>
+                                                <li key={row.id} className="inline">{row.descricao}</li>
                                             );
                                         }
-                                        return(<></>);
+
+                                        return(<React.Fragment key={row.id}></React.Fragment>);
                                     })}
                                 </ul>
                             </div>

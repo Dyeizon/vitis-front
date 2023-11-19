@@ -169,6 +169,22 @@
     background-color: #9f0045;
 }
 
+.tratamentos li:nth-child(1) {
+    text-transform: capitalize;
+}
+
+.tratamentos li::after {
+    content: ', ';
+}
+
+.tratamentos li:nth-last-child(2)::after {
+    content: ' e ';
+}
+
+.tratamentos li:last-child::after {
+    content: '.';
+}
+
 /* Fungo PopUp */
 
 .popup-carousel {
