@@ -3,7 +3,7 @@ import './AboutUs.css';
 import React from 'react';
 import { supabase } from "../../App";
 import { useEffect, useState } from "react";
-import imgTodos from './../../img/background.jpg';
+import ifc from './../../img/ifc.jpg';
 
 import ProfileCard from './ProfileCard';
 
@@ -21,8 +21,8 @@ export default function AboutUs() {
 
     return (
         <section className="about-us">
-            <div className="about-us-img-all" style={{backgroundImage: `url(` + imgTodos + `)`}}></div>
-            <p className="mt-10 text-center">semos a universal</p>
+            <div className="about-us-img-all" style={{backgroundImage: `url(` + ifc + `)`}}></div>
+            <p className="mt-10 text-center w-2/3 m-auto about-us-desc">Somos acadêmicos de Ciências da Computação no Instituto Federal Catarinense Campus Videira, esse site é um projeto desenvolvido para as disciplinas de <span className='italic'>Desenvolvimento Web I</span> e <span className='italic'>Extensão e Pesquisa em Computação</span>. </p>
             <hr className='my-10'/>
             <div className="flex justify-center gap-10 flex-wrap align-center w-11/12 m-auto">
                 {profiles.map((row, index) => (

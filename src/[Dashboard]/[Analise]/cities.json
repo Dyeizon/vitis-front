@@ -1,0 +1,1477 @@
+[
+        {
+            "Id": 4312,
+            "value": 4200051,
+            "label": "Abdon Batista"
+        },
+        {
+            "Id": 4313,
+            "value": 4200101,
+            "label": "Abelardo Luz"
+        },
+        {
+            "Id": 4314,
+            "value": 4200200,
+            "label": "Agrolândia"
+        },
+        {
+            "Id": 4315,
+            "value": 4200309,
+            "label": "Agronômica"
+        },
+        {
+            "Id": 4316,
+            "value": 4200408,
+            "label": "Água Doce"
+        },
+        {
+            "Id": 4317,
+            "value": 4200507,
+            "label": "Águas de Chapecó"
+        },
+        {
+            "Id": 4318,
+            "value": 4200556,
+            "label": "Águas Frias"
+        },
+        {
+            "Id": 4319,
+            "value": 4200606,
+            "label": "Águas Mornas"
+        },
+        {
+            "Id": 4320,
+            "value": 4200705,
+            "label": "Alfredo Wagner"
+        },
+        {
+            "Id": 4321,
+            "value": 4200754,
+            "label": "Alto Bela Vista"
+        },
+        {
+            "Id": 4322,
+            "value": 4200804,
+            "label": "Anchieta"
+        },
+        {
+            "Id": 4323,
+            "value": 4200903,
+            "label": "Angelina"
+        },
+        {
+            "Id": 4324,
+            "value": 4201000,
+            "label": "Anita Garibaldi"
+        },
+        {
+            "Id": 4325,
+            "value": 4201109,
+            "label": "Anitápolis"
+        },
+        {
+            "Id": 4326,
+            "value": 4201208,
+            "label": "Antônio Carlos"
+        },
+        {
+            "Id": 4327,
+            "value": 4201257,
+            "label": "Apiúna"
+        },
+        {
+            "Id": 4328,
+            "value": 4201273,
+            "label": "Arabutã"
+        },
+        {
+            "Id": 4329,
+            "value": 4201307,
+            "label": "Araquari"
+        },
+        {
+            "Id": 4330,
+            "value": 4201406,
+            "label": "Araranguá"
+        },
+        {
+            "Id": 4331,
+            "value": 4201505,
+            "label": "Armazém"
+        },
+        {
+            "Id": 4332,
+            "value": 4201604,
+            "label": "Arroio Trinta"
+        },
+        {
+            "Id": 4333,
+            "value": 4201653,
+            "label": "Arvoredo"
+        },
+        {
+            "Id": 4334,
+            "value": 4201703,
+            "label": "Ascurra"
+        },
+        {
+            "Id": 4335,
+            "value": 4201802,
+            "label": "Atalanta"
+        },
+        {
+            "Id": 4336,
+            "value": 4201901,
+            "label": "Aurora"
+        },
+        {
+            "Id": 4337,
+            "value": 4201950,
+            "label": "Balneário Arroio do Silva"
+        },
+        {
+            "Id": 4338,
+            "value": 4202008,
+            "label": "Balneário Camboriú"
+        },
+        {
+            "Id": 4339,
+            "value": 4202057,
+            "label": "Balneário Barra do Sul"
+        },
+        {
+            "Id": 4340,
+            "value": 4202073,
+            "label": "Balneário Gaivota"
+        },
+        {
+            "Id": 4341,
+            "value": 4202081,
+            "label": "Bandeirante"
+        },
+        {
+            "Id": 4342,
+            "value": 4202099,
+            "label": "Barra Bonita"
+        },
+        {
+            "Id": 4343,
+            "value": 4202107,
+            "label": "Barra Velha"
+        },
+        {
+            "Id": 4344,
+            "value": 4202131,
+            "label": "Bela Vista do Toldo"
+        },
+        {
+            "Id": 4345,
+            "value": 4202156,
+            "label": "Belmonte"
+        },
+        {
+            "Id": 4346,
+            "value": 4202206,
+            "label": "Benedito Novo"
+        },
+        {
+            "Id": 4347,
+            "value": 4202305,
+            "label": "Biguaçu"
+        },
+        {
+            "Id": 4348,
+            "value": 4202404,
+            "label": "Blumenau"
+        },
+        {
+            "Id": 4349,
+            "value": 4202438,
+            "label": "Bocaina do Sul"
+        },
+        {
+            "Id": 4350,
+            "value": 4202453,
+            "label": "Bombinhas"
+        },
+        {
+            "Id": 4351,
+            "value": 4202503,
+            "label": "Bom Jardim da Serra"
+        },
+        {
+            "Id": 4352,
+            "value": 4202537,
+            "label": "Bom Jesus"
+        },
+        {
+            "Id": 4353,
+            "value": 4202578,
+            "label": "Bom Jesus do Oeste"
+        },
+        {
+            "Id": 4354,
+            "value": 4202602,
+            "label": "Bom Retiro"
+        },
+        {
+            "Id": 4355,
+            "value": 4202701,
+            "label": "Botuverá"
+        },
+        {
+            "Id": 4356,
+            "value": 4202800,
+            "label": "Braço do Norte"
+        },
+        {
+            "Id": 4357,
+            "value": 4202859,
+            "label": "Braço do Trombudo"
+        },
+        {
+            "Id": 4358,
+            "value": 4202875,
+            "label": "Brunópolis"
+        },
+        {
+            "Id": 4359,
+            "value": 4202909,
+            "label": "Brusque"
+        },
+        {
+            "Id": 4360,
+            "value": 4203006,
+            "label": "Caçador"
+        },
+        {
+            "Id": 4361,
+            "value": 4203105,
+            "label": "Caibi"
+        },
+        {
+            "Id": 4362,
+            "value": 4203154,
+            "label": "Calmon"
+        },
+        {
+            "Id": 4363,
+            "value": 4203204,
+            "label": "Camboriú"
+        },
+        {
+            "Id": 4364,
+            "value": 4203253,
+            "label": "Capão Alto"
+        },
+        {
+            "Id": 4365,
+            "value": 4203303,
+            "label": "Campo Alegre"
+        },
+        {
+            "Id": 4366,
+            "value": 4203402,
+            "label": "Campo Belo do Sul"
+        },
+        {
+            "Id": 4367,
+            "value": 4203501,
+            "label": "Campo Erê"
+        },
+        {
+            "Id": 4368,
+            "value": 4203600,
+            "label": "Campos Novos"
+        },
+        {
+            "Id": 4369,
+            "value": 4203709,
+            "label": "Canelinha"
+        },
+        {
+            "Id": 4370,
+            "value": 4203808,
+            "label": "Canoinhas"
+        },
+        {
+            "Id": 4371,
+            "value": 4203907,
+            "label": "Capinzal"
+        },
+        {
+            "Id": 4372,
+            "value": 4203956,
+            "label": "Capivari de Baixo"
+        },
+        {
+            "Id": 4373,
+            "value": 4204004,
+            "label": "Catanduvas"
+        },
+        {
+            "Id": 4374,
+            "value": 4204103,
+            "label": "Caxambu do Sul"
+        },
+        {
+            "Id": 4375,
+            "value": 4204152,
+            "label": "Celso Ramos"
+        },
+        {
+            "Id": 4376,
+            "value": 4204178,
+            "label": "Cerro Negro"
+        },
+        {
+            "Id": 4377,
+            "value": 4204194,
+            "label": "Chapadão do Lageado"
+        },
+        {
+            "Id": 4378,
+            "value": 4204202,
+            "label": "Chapecó"
+        },
+        {
+            "Id": 4379,
+            "value": 4204251,
+            "label": "Cocal do Sul"
+        },
+        {
+            "Id": 4380,
+            "value": 4204301,
+            "label": "Concórdia"
+        },
+        {
+            "Id": 4381,
+            "value": 4204350,
+            "label": "Cordilheira Alta"
+        },
+        {
+            "Id": 4382,
+            "value": 4204400,
+            "label": "Coronel Freitas"
+        },
+        {
+            "Id": 4383,
+            "value": 4204459,
+            "label": "Coronel Martins"
+        },
+        {
+            "Id": 4384,
+            "value": 4204509,
+            "label": "Corupá"
+        },
+        {
+            "Id": 4385,
+            "value": 4204558,
+            "label": "Correia Pinto"
+        },
+        {
+            "Id": 4386,
+            "value": 4204608,
+            "label": "Criciúma"
+        },
+        {
+            "Id": 4387,
+            "value": 4204707,
+            "label": "Cunha Porã"
+        },
+        {
+            "Id": 4388,
+            "value": 4204756,
+            "label": "Cunhataí"
+        },
+        {
+            "Id": 4389,
+            "value": 4204806,
+            "label": "Curitibanos"
+        },
+        {
+            "Id": 4390,
+            "value": 4204905,
+            "label": "Descanso"
+        },
+        {
+            "Id": 4391,
+            "value": 4205001,
+            "label": "Dionísio Cerqueira"
+        },
+        {
+            "Id": 4392,
+            "value": 4205100,
+            "label": "Dona Emma"
+        },
+        {
+            "Id": 4393,
+            "value": 4205159,
+            "label": "Doutor Pedrinho"
+        },
+        {
+            "Id": 4394,
+            "value": 4205175,
+            "label": "Entre Rios"
+        },
+        {
+            "Id": 4395,
+            "value": 4205191,
+            "label": "Ermo"
+        },
+        {
+            "Id": 4396,
+            "value": 4205209,
+            "label": "Erval Velho"
+        },
+        {
+            "Id": 4397,
+            "value": 4205308,
+            "label": "Faxinal dos Guedes"
+        },
+        {
+            "Id": 4398,
+            "value": 4205357,
+            "label": "Flor do Sertão"
+        },
+        {
+            "Id": 4399,
+            "value": 4205407,
+            "label": "Florianópolis"
+        },
+        {
+            "Id": 4400,
+            "value": 4205431,
+            "label": "Formosa do Sul"
+        },
+        {
+            "Id": 4401,
+            "value": 4205456,
+            "label": "Forquilhinha"
+        },
+        {
+            "Id": 4402,
+            "value": 4205506,
+            "label": "Fraiburgo"
+        },
+        {
+            "Id": 4403,
+            "value": 4205555,
+            "label": "Frei Rogério"
+        },
+        {
+            "Id": 4404,
+            "value": 4205605,
+            "label": "Galvão"
+        },
+        {
+            "Id": 4405,
+            "value": 4205704,
+            "label": "Garopaba"
+        },
+        {
+            "Id": 4406,
+            "value": 4205803,
+            "label": "Garuva"
+        },
+        {
+            "Id": 4407,
+            "value": 4205902,
+            "label": "Gaspar"
+        },
+        {
+            "Id": 4408,
+            "value": 4206009,
+            "label": "Governador Celso Ramos"
+        },
+        {
+            "Id": 4409,
+            "value": 4206108,
+            "label": "Grão Pará"
+        },
+        {
+            "Id": 4410,
+            "value": 4206207,
+            "label": "Gravatal"
+        },
+        {
+            "Id": 4411,
+            "value": 4206306,
+            "label": "Guabiruba"
+        },
+        {
+            "Id": 4412,
+            "value": 4206405,
+            "label": "Guaraciaba"
+        },
+        {
+            "Id": 4413,
+            "value": 4206504,
+            "label": "Guaramirim"
+        },
+        {
+            "Id": 4414,
+            "value": 4206603,
+            "label": "Guarujá do Sul"
+        },
+        {
+            "Id": 4415,
+            "value": 4206652,
+            "label": "Guatambú"
+        },
+        {
+            "Id": 4416,
+            "value": 4206702,
+            "label": "Herval D'Oeste"
+        },
+        {
+            "Id": 4417,
+            "value": 4206751,
+            "label": "Ibiam"
+        },
+        {
+            "Id": 4418,
+            "value": 4206801,
+            "label": "Ibicaré"
+        },
+        {
+            "Id": 4419,
+            "value": 4206900,
+            "label": "Ibirama"
+        },
+        {
+            "Id": 4420,
+            "value": 4207007,
+            "label": "Içara"
+        },
+        {
+            "Id": 4421,
+            "value": 4207106,
+            "label": "Ilhota"
+        },
+        {
+            "Id": 4422,
+            "value": 4207205,
+            "label": "Imaruí"
+        },
+        {
+            "Id": 4423,
+            "value": 4207304,
+            "label": "Imbituba"
+        },
+        {
+            "Id": 4424,
+            "value": 4207403,
+            "label": "Imbuia"
+        },
+        {
+            "Id": 4425,
+            "value": 4207502,
+            "label": "Indaial"
+        },
+        {
+            "Id": 4426,
+            "value": 4207577,
+            "label": "Iomerê"
+        },
+        {
+            "Id": 4427,
+            "value": 4207601,
+            "label": "Ipira"
+        },
+        {
+            "Id": 4428,
+            "value": 4207650,
+            "label": "Iporã do Oeste"
+        },
+        {
+            "Id": 4429,
+            "value": 4207684,
+            "label": "Ipuaçu"
+        },
+        {
+            "Id": 4430,
+            "value": 4207700,
+            "label": "Ipumirim"
+        },
+        {
+            "Id": 4431,
+            "value": 4207759,
+            "label": "Iraceminha"
+        },
+        {
+            "Id": 4432,
+            "value": 4207809,
+            "label": "Irani"
+        },
+        {
+            "Id": 4433,
+            "value": 4207858,
+            "label": "Irati"
+        },
+        {
+            "Id": 4434,
+            "value": 4207908,
+            "label": "Irineópolis"
+        },
+        {
+            "Id": 4435,
+            "value": 4208005,
+            "label": "Itá"
+        },
+        {
+            "Id": 4436,
+            "value": 4208104,
+            "label": "Itaiópolis"
+        },
+        {
+            "Id": 4437,
+            "value": 4208203,
+            "label": "Itajaí"
+        },
+        {
+            "Id": 4438,
+            "value": 4208302,
+            "label": "Itapema"
+        },
+        {
+            "Id": 4439,
+            "value": 4208401,
+            "label": "Itapiranga"
+        },
+        {
+            "Id": 4440,
+            "value": 4208450,
+            "label": "Itapoá"
+        },
+        {
+            "Id": 4441,
+            "value": 4208500,
+            "label": "Ituporanga"
+        },
+        {
+            "Id": 4442,
+            "value": 4208609,
+            "label": "Jaborá"
+        },
+        {
+            "Id": 4443,
+            "value": 4208708,
+            "label": "Jacinto Machado"
+        },
+        {
+            "Id": 4444,
+            "value": 4208807,
+            "label": "Jaguaruna"
+        },
+        {
+            "Id": 4445,
+            "value": 4208906,
+            "label": "Jaraguá do Sul"
+        },
+        {
+            "Id": 4446,
+            "value": 4208955,
+            "label": "Jardinópolis"
+        },
+        {
+            "Id": 4447,
+            "value": 4209003,
+            "label": "Joaçaba"
+        },
+        {
+            "Id": 4448,
+            "value": 4209102,
+            "label": "Joinville"
+        },
+        {
+            "Id": 4449,
+            "value": 4209151,
+            "label": "José Boiteux"
+        },
+        {
+            "Id": 4450,
+            "value": 4209177,
+            "label": "Jupiá"
+        },
+        {
+            "Id": 4451,
+            "value": 4209201,
+            "label": "Lacerdópolis"
+        },
+        {
+            "Id": 4452,
+            "value": 4209300,
+            "label": "Lages"
+        },
+        {
+            "Id": 4453,
+            "value": 4209409,
+            "label": "Laguna"
+        },
+        {
+            "Id": 4454,
+            "value": 4209458,
+            "label": "Lajeado Grande"
+        },
+        {
+            "Id": 4455,
+            "value": 4209508,
+            "label": "Laurentino"
+        },
+        {
+            "Id": 4456,
+            "value": 4209607,
+            "label": "Lauro Muller"
+        },
+        {
+            "Id": 4457,
+            "value": 4209706,
+            "label": "Lebon Régis"
+        },
+        {
+            "Id": 4458,
+            "value": 4209805,
+            "label": "Leoberto Leal"
+        },
+        {
+            "Id": 4459,
+            "value": 4209854,
+            "label": "Lindóia do Sul"
+        },
+        {
+            "Id": 4460,
+            "value": 4209904,
+            "label": "Lontras"
+        },
+        {
+            "Id": 4461,
+            "value": 4210001,
+            "label": "Luiz Alves"
+        },
+        {
+            "Id": 4462,
+            "value": 4210035,
+            "label": "Luzerna"
+        },
+        {
+            "Id": 4463,
+            "value": 4210050,
+            "label": "Macieira"
+        },
+        {
+            "Id": 4464,
+            "value": 4210100,
+            "label": "Mafra"
+        },
+        {
+            "Id": 4465,
+            "value": 4210209,
+            "label": "Major Gercino"
+        },
+        {
+            "Id": 4466,
+            "value": 4210308,
+            "label": "Major Vieira"
+        },
+        {
+            "Id": 4467,
+            "value": 4210407,
+            "label": "Maracajá"
+        },
+        {
+            "Id": 4468,
+            "value": 4210506,
+            "label": "Maravilha"
+        },
+        {
+            "Id": 4469,
+            "value": 4210555,
+            "label": "Marema"
+        },
+        {
+            "Id": 4470,
+            "value": 4210605,
+            "label": "Massaranduba"
+        },
+        {
+            "Id": 4471,
+            "value": 4210704,
+            "label": "Matos Costa"
+        },
+        {
+            "Id": 4472,
+            "value": 4210803,
+            "label": "Meleiro"
+        },
+        {
+            "Id": 4473,
+            "value": 4210852,
+            "label": "Mirim Doce"
+        },
+        {
+            "Id": 4474,
+            "value": 4210902,
+            "label": "Modelo"
+        },
+        {
+            "Id": 4475,
+            "value": 4211009,
+            "label": "Mondaí"
+        },
+        {
+            "Id": 4476,
+            "value": 4211058,
+            "label": "Monte Carlo"
+        },
+        {
+            "Id": 4477,
+            "value": 4211108,
+            "label": "Monte Castelo"
+        },
+        {
+            "Id": 4478,
+            "value": 4211207,
+            "label": "Morro da Fumaça"
+        },
+        {
+            "Id": 4479,
+            "value": 4211256,
+            "label": "Morro Grande"
+        },
+        {
+            "Id": 4480,
+            "value": 4211306,
+            "label": "Navegantes"
+        },
+        {
+            "Id": 4481,
+            "value": 4211405,
+            "label": "Nova Erechim"
+        },
+        {
+            "Id": 4482,
+            "value": 4211454,
+            "label": "Nova Itaberaba"
+        },
+        {
+            "Id": 4483,
+            "value": 4211504,
+            "label": "Nova Trento"
+        },
+        {
+            "Id": 4484,
+            "value": 4211603,
+            "label": "Nova Veneza"
+        },
+        {
+            "Id": 4485,
+            "value": 4211652,
+            "label": "Novo Horizonte"
+        },
+        {
+            "Id": 4486,
+            "value": 4211702,
+            "label": "Orleans"
+        },
+        {
+            "Id": 4487,
+            "value": 4211751,
+            "label": "Otacílio Costa"
+        },
+        {
+            "Id": 4488,
+            "value": 4211801,
+            "label": "Ouro"
+        },
+        {
+            "Id": 4489,
+            "value": 4211850,
+            "label": "Ouro Verde"
+        },
+        {
+            "Id": 4490,
+            "value": 4211876,
+            "label": "Paial"
+        },
+        {
+            "Id": 4491,
+            "value": 4211892,
+            "label": "Painel"
+        },
+        {
+            "Id": 4492,
+            "value": 4211900,
+            "label": "Palhoça"
+        },
+        {
+            "Id": 4493,
+            "value": 4212007,
+            "label": "Palma Sola"
+        },
+        {
+            "Id": 4494,
+            "value": 4212056,
+            "label": "Palmeira"
+        },
+        {
+            "Id": 4495,
+            "value": 4212106,
+            "label": "Palmitos"
+        },
+        {
+            "Id": 4496,
+            "value": 4212205,
+            "label": "Papanduva"
+        },
+        {
+            "Id": 4497,
+            "value": 4212239,
+            "label": "Paraíso"
+        },
+        {
+            "Id": 4498,
+            "value": 4212254,
+            "label": "Passo de Torres"
+        },
+        {
+            "Id": 4499,
+            "value": 4212270,
+            "label": "Passos Maia"
+        },
+        {
+            "Id": 4500,
+            "value": 4212304,
+            "label": "Paulo Lopes"
+        },
+        {
+            "Id": 4501,
+            "value": 4212403,
+            "label": "Pedras Grandes"
+        },
+        {
+            "Id": 4502,
+            "value": 4212502,
+            "label": "Penha"
+        },
+        {
+            "Id": 4503,
+            "value": 4212601,
+            "label": "Peritiba"
+        },
+        {
+            "Id": 4504,
+            "value": 4212650,
+            "label": "Pescaria Brava"
+        },
+        {
+            "Id": 4505,
+            "value": 4212700,
+            "label": "Petrolândia"
+        },
+        {
+            "Id": 4506,
+            "value": 4212809,
+            "label": "Balneário Piçarras"
+        },
+        {
+            "Id": 4507,
+            "value": 4212908,
+            "label": "Pinhalzinho"
+        },
+        {
+            "Id": 4508,
+            "value": 4213005,
+            "label": "Pinheiro Preto"
+        },
+        {
+            "Id": 4509,
+            "value": 4213104,
+            "label": "Piratuba"
+        },
+        {
+            "Id": 4510,
+            "value": 4213153,
+            "label": "Planalto Alegre"
+        },
+        {
+            "Id": 4511,
+            "value": 4213203,
+            "label": "Pomerode"
+        },
+        {
+            "Id": 4512,
+            "value": 4213302,
+            "label": "Ponte Alta"
+        },
+        {
+            "Id": 4513,
+            "value": 4213351,
+            "label": "Ponte Alta do Norte"
+        },
+        {
+            "Id": 4514,
+            "value": 4213401,
+            "label": "Ponte Serrada"
+        },
+        {
+            "Id": 4515,
+            "value": 4213500,
+            "label": "Porto Belo"
+        },
+        {
+            "Id": 4516,
+            "value": 4213609,
+            "label": "Porto União"
+        },
+        {
+            "Id": 4517,
+            "value": 4213708,
+            "label": "Pouso Redondo"
+        },
+        {
+            "Id": 4518,
+            "value": 4213807,
+            "label": "Praia Grande"
+        },
+        {
+            "Id": 4519,
+            "value": 4213906,
+            "label": "Presidente Castello Branco"
+        },
+        {
+            "Id": 4520,
+            "value": 4214003,
+            "label": "Presidente Getúlio"
+        },
+        {
+            "Id": 4521,
+            "value": 4214102,
+            "label": "Presidente Nereu"
+        },
+        {
+            "Id": 4522,
+            "value": 4214151,
+            "label": "Princesa"
+        },
+        {
+            "Id": 4523,
+            "value": 4214201,
+            "label": "Quilombo"
+        },
+        {
+            "Id": 4524,
+            "value": 4214300,
+            "label": "Rancho Queimado"
+        },
+        {
+            "Id": 4525,
+            "value": 4214409,
+            "label": "Rio das Antas"
+        },
+        {
+            "Id": 4526,
+            "value": 4214508,
+            "label": "Rio do Campo"
+        },
+        {
+            "Id": 4527,
+            "value": 4214607,
+            "label": "Rio do Oeste"
+        },
+        {
+            "Id": 4528,
+            "value": 4214706,
+            "label": "Rio dos Cedros"
+        },
+        {
+            "Id": 4529,
+            "value": 4214805,
+            "label": "Rio do Sul"
+        },
+        {
+            "Id": 4530,
+            "value": 4214904,
+            "label": "Rio Fortuna"
+        },
+        {
+            "Id": 4531,
+            "value": 4215000,
+            "label": "Rio Negrinho"
+        },
+        {
+            "Id": 4532,
+            "value": 4215059,
+            "label": "Rio Rufino"
+        },
+        {
+            "Id": 4533,
+            "value": 4215075,
+            "label": "Riqueza"
+        },
+        {
+            "Id": 4534,
+            "value": 4215109,
+            "label": "Rodeio"
+        },
+        {
+            "Id": 4535,
+            "value": 4215208,
+            "label": "Romelândia"
+        },
+        {
+            "Id": 4536,
+            "value": 4215307,
+            "label": "Salete"
+        },
+        {
+            "Id": 4537,
+            "value": 4215356,
+            "label": "Saltinho"
+        },
+        {
+            "Id": 4538,
+            "value": 4215406,
+            "label": "Salto Veloso"
+        },
+        {
+            "Id": 4539,
+            "value": 4215455,
+            "label": "Sangão"
+        },
+        {
+            "Id": 4540,
+            "value": 4215505,
+            "label": "Santa Cecília"
+        },
+        {
+            "Id": 4541,
+            "value": 4215554,
+            "label": "Santa Helena"
+        },
+        {
+            "Id": 4542,
+            "value": 4215604,
+            "label": "Santa Rosa de Lima"
+        },
+        {
+            "Id": 4543,
+            "value": 4215653,
+            "label": "Santa Rosa do Sul"
+        },
+        {
+            "Id": 4544,
+            "value": 4215679,
+            "label": "Santa Terezinha"
+        },
+        {
+            "Id": 4545,
+            "value": 4215687,
+            "label": "Santa Terezinha do Progresso"
+        },
+        {
+            "Id": 4546,
+            "value": 4215695,
+            "label": "Santiago do Sul"
+        },
+        {
+            "Id": 4547,
+            "value": 4215703,
+            "label": "Santo Amaro da Imperatriz"
+        },
+        {
+            "Id": 4548,
+            "value": 4215752,
+            "label": "São Bernardino"
+        },
+        {
+            "Id": 4549,
+            "value": 4215802,
+            "label": "São Bento do Sul"
+        },
+        {
+            "Id": 4550,
+            "value": 4215901,
+            "label": "São Bonifácio"
+        },
+        {
+            "Id": 4551,
+            "value": 4216008,
+            "label": "São Carlos"
+        },
+        {
+            "Id": 4552,
+            "value": 4216057,
+            "label": "São Cristovão do Sul"
+        },
+        {
+            "Id": 4553,
+            "value": 4216107,
+            "label": "São Domingos"
+        },
+        {
+            "Id": 4554,
+            "value": 4216206,
+            "label": "São Francisco do Sul"
+        },
+        {
+            "Id": 4555,
+            "value": 4216255,
+            "label": "São João do Oeste"
+        },
+        {
+            "Id": 4556,
+            "value": 4216305,
+            "label": "São João Batista"
+        },
+        {
+            "Id": 4557,
+            "value": 4216354,
+            "label": "São João do Itaperiú"
+        },
+        {
+            "Id": 4558,
+            "value": 4216404,
+            "label": "São João do Sul"
+        },
+        {
+            "Id": 4559,
+            "value": 4216503,
+            "label": "São Joaquim"
+        },
+        {
+            "Id": 4560,
+            "value": 4216602,
+            "label": "São José"
+        },
+        {
+            "Id": 4561,
+            "value": 4216701,
+            "label": "São José do Cedro"
+        },
+        {
+            "Id": 4562,
+            "value": 4216800,
+            "label": "São José do Cerrito"
+        },
+        {
+            "Id": 4563,
+            "value": 4216909,
+            "label": "São Lourenço do Oeste"
+        },
+        {
+            "Id": 4564,
+            "value": 4217006,
+            "label": "São Ludgero"
+        },
+        {
+            "Id": 4565,
+            "value": 4217105,
+            "label": "São Martinho"
+        },
+        {
+            "Id": 4566,
+            "value": 4217154,
+            "label": "São Miguel da Boa Vista"
+        },
+        {
+            "Id": 4567,
+            "value": 4217204,
+            "label": "São Miguel do Oeste"
+        },
+        {
+            "Id": 4568,
+            "value": 4217253,
+            "label": "São Pedro de Alcântara"
+        },
+        {
+            "Id": 4569,
+            "value": 4217303,
+            "label": "Saudades"
+        },
+        {
+            "Id": 4570,
+            "value": 4217402,
+            "label": "Schroeder"
+        },
+        {
+            "Id": 4571,
+            "value": 4217501,
+            "label": "Seara"
+        },
+        {
+            "Id": 4572,
+            "value": 4217550,
+            "label": "Serra Alta"
+        },
+        {
+            "Id": 4573,
+            "value": 4217600,
+            "label": "Siderópolis"
+        },
+        {
+            "Id": 4574,
+            "value": 4217709,
+            "label": "Sombrio"
+        },
+        {
+            "Id": 4575,
+            "value": 4217758,
+            "label": "Sul Brasil"
+        },
+        {
+            "Id": 4576,
+            "value": 4217808,
+            "label": "Taió"
+        },
+        {
+            "Id": 4577,
+            "value": 4217907,
+            "label": "Tangará"
+        },
+        {
+            "Id": 4578,
+            "value": 4217956,
+            "label": "Tigrinhos"
+        },
+        {
+            "Id": 4579,
+            "value": 4218004,
+            "label": "Tijucas"
+        },
+        {
+            "Id": 4580,
+            "value": 4218103,
+            "label": "Timbé do Sul"
+        },
+        {
+            "Id": 4581,
+            "value": 4218202,
+            "label": "Timbó"
+        },
+        {
+            "Id": 4582,
+            "value": 4218251,
+            "label": "Timbó Grande"
+        },
+        {
+            "Id": 4583,
+            "value": 4218301,
+            "label": "Três Barras"
+        },
+        {
+            "Id": 4584,
+            "value": 4218350,
+            "label": "Treviso"
+        },
+        {
+            "Id": 4585,
+            "value": 4218400,
+            "label": "Treze de Maio"
+        },
+        {
+            "Id": 4586,
+            "value": 4218509,
+            "label": "Treze Tílias"
+        },
+        {
+            "Id": 4587,
+            "value": 4218608,
+            "label": "Trombudo Central"
+        },
+        {
+            "Id": 4588,
+            "value": 4218707,
+            "label": "Tubarão"
+        },
+        {
+            "Id": 4589,
+            "value": 4218756,
+            "label": "Tunápolis"
+        },
+        {
+            "Id": 4590,
+            "value": 4218806,
+            "label": "Turvo"
+        },
+        {
+            "Id": 4591,
+            "value": 4218855,
+            "label": "União do Oeste"
+        },
+        {
+            "Id": 4592,
+            "value": 4218905,
+            "label": "Urubici"
+        },
+        {
+            "Id": 4593,
+            "value": 4218954,
+            "label": "Urupema"
+        },
+        {
+            "Id": 4594,
+            "value": 4219002,
+            "label": "Urussanga"
+        },
+        {
+            "Id": 4595,
+            "value": 4219101,
+            "label": "Vargeão"
+        },
+        {
+            "Id": 4596,
+            "value": 4219150,
+            "label": "Vargem"
+        },
+        {
+            "Id": 4597,
+            "value": 4219176,
+            "label": "Vargem Bonita"
+        },
+        {
+            "Id": 4598,
+            "value": 4219200,
+            "label": "Vidal Ramos"
+        },
+        {
+            "Id": 4599,
+            "value": 4219309,
+            "label": "Videira"
+        },
+        {
+            "Id": 4600,
+            "value": 4219358,
+            "label": "Vitor Meireles"
+        },
+        {
+            "Id": 4601,
+            "value": 4219408,
+            "label": "Witmarsum"
+        },
+        {
+            "Id": 4602,
+            "value": 4219507,
+            "label": "Xanxerê"
+        },
+        {
+            "Id": 4603,
+            "value": 4219606,
+            "label": "Xavantina"
+        },
+        {
+            "Id": 4604,
+            "value": 4219705,
+            "label": "Xaxim"
+        },
+        {
+            "Id": 4605,
+            "value": 4219853,
+            "label": "Zortéa"
+        },
+        {
+            "Id": 4606,
+            "value": 4220000,
+            "label": "Balneário Rincão"
+        }
+    ]

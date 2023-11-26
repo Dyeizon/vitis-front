@@ -182,8 +182,6 @@ export default function Fungis() {
 
                                 <ul className="tratamentos">
                                     {tratamentos.map((row, i) => {
-                                        console.log("length: " + tratamentos.length)
-                                        console.log("i: " + i);
                                         if(row.id_fungo === fungo.id) {
                                             return(
                                                 <li key={row.id} className="inline">{row.descricao}</li>
